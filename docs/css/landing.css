@@ -58,6 +58,25 @@ footer img:hover {
   opacity: 1;
 }
 
+footer .social-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+footer .social-links img {
+    height: 32px;
+    width: auto;
+}
+
+footer .github-icon {
+    filter: grayscale(100%);
+}
+
+footer .github-icon:hover {
+    filter: none;
+}
+
 .subject-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
