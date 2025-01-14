@@ -57,7 +57,8 @@ function createSubjectCard(subject) {
         examData[subject].forEach(exam => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            link.href = exam.path;
+            // Use relative paths for the proxy
+            link.href = `proever/shared/exam-start.html?exam=${exam.path}`;
             link.textContent = `${exam.name} (${formatDate(exam.date)})`;
             listItem.appendChild(link);
             examList.appendChild(listItem);

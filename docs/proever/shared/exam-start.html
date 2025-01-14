@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Start Prøven</title>
+	<style>
+		body { margin: 0; }
+		.wait-screen {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background: #f5f5f5;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 2rem;
+		}
+		.wait-content {
+			max-width: 600px;
+			text-align: center;
+			background: white;
+			padding: 2rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+		.warning-icon {
+			font-size: 3rem;
+			color: #f44336;
+			margin-bottom: 1rem;
+		}
+		.wait-title {
+			font-size: 1.8rem;
+			color: #333;
+			margin-bottom: 1.5rem;
+		}
+		.wait-message {
+			font-size: 1.1rem;
+			line-height: 1.6;
+			color: #333;
+			margin-bottom: 2rem;
+		}
+		.start-button {
+			background: #2196F3;
+			color: white;
+			border: none;
+			padding: 1rem 2rem;
+			font-size: 1.2rem;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: background-color 0.2s ease;
+		}
+		.start-button:hover {
+			background: #1976D2;
+		}
+	</style>
+</head>
+<body>
+	<div class="wait-screen">
+		<div class="wait-content">
+			<div class="warning-icon">⚠️</div>
+			<h1 class="wait-title">Vent venligst</h1>
+			<p class="wait-message">
+				Du må ikke starte prøven, før din lærer har givet tilladelse til det.<br><br>
+				Når du trykker på "Start Prøven", vil prøven begynde. Sørg for at du er klar og har alt det nødvendige udstyr.
+			</p>
+			<button class="start-button" onclick="confirmStart()">Start Prøven</button>
+		</div>
+	</div>
+	<script>
+		function confirmStart() {
+			if (confirm('Er du sikker på, at du vil starte prøven?\n\nHusk: Din lærer skal have givet tilladelse til at starte.')) {
+				const urlParams = new URLSearchParams(window.location.search);
+				const examPath = urlParams.get('exam');
+				if (examPath) {
+					window.location.href = '../../' + examPath;
+				}
+			}
+		}
+	</script>
+</body>
+</html>
