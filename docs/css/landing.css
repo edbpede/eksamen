@@ -74,7 +74,17 @@ footer .github-icon {
 }
 
 footer .github-icon:hover {
-    filter: none;
+  filter: none;
+}
+
+footer .crown-icon {
+  filter: grayscale(100%);
+  height: 32px;
+  width: auto;
+}
+
+footer .crown-icon:hover {
+  filter: none;
 }
 
 .subject-grid {
