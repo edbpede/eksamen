@@ -1,3 +1,13 @@
+// Date formatting function
+function formatDate(dateString) {
+    const [year, month] = dateString.split('-');
+    const monthNames = {
+        '05': 'maj',
+        '12': 'dec'
+    };
+    return `${year} ${monthNames[month] || ''}`;
+}
+
 // List of all possible subjects
 const subjects = [
     "Biologi",
@@ -48,7 +58,7 @@ function createSubjectCard(subject) {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
             link.href = exam.path;
-            link.textContent = `${exam.name} (${exam.date})`;
+            link.textContent = `${exam.name} (${formatDate(exam.date)})`;
             listItem.appendChild(link);
             examList.appendChild(listItem);
         });
