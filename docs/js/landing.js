@@ -16,14 +16,14 @@ const examData = {
         {
             name: "Skriftlig Fremstilling",
             date: "2023-05-02",
-            path: "FP9_dansk/2023-05-02_Skriftlig_Fremstilling/index.html"
+            path: "proever/FP9_dansk/2023-05-02_Skriftlig_Fremstilling/index.html"
         }
     ],
     "Matematik": [
         {
             name: "Med Hjælpemidler",
             date: "2023-12-04",
-            path: "FP9_matematik/2023-12-04_Med_Hjaelpemidler/index.html"
+            path: "proever/FP9_matematik/2023-12-04_Med_Hjaelpemidler/index.html"
         }
     ]
 };
