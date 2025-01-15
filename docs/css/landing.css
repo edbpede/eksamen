@@ -133,14 +133,14 @@ footer .crown-icon:hover {
   color: var(--primary-color);
 }
 
-.logo-container {
-  text-align: center;
-  margin: 2rem 0;
+footer .edbpede-logo {
+  filter: grayscale(100%);
+  height: 32px;
+  width: auto;
 }
 
-.edbpede-logo {
-  width: 200px;
-  height: auto;
+footer .edbpede-logo:hover {
+  filter: none;
 }
 
 @media (max-width: 600px) {
