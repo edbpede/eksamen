@@ -133,6 +133,16 @@ footer .crown-icon:hover {
   color: var(--primary-color);
 }
 
+.logo-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.edbpede-logo {
+  width: 200px;
+  height: auto;
+}
+
 @media (max-width: 600px) {
   header {
     padding: 1.5rem;
