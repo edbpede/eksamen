@@ -1,4 +1,4 @@
-import { subjects, examData } from './examList.js';
+import { subjects, examData, initializeExamData } from './examList.js';
 
 // Date formatting function
 function formatDate(dateString) {
@@ -9,8 +9,6 @@ function formatDate(dateString) {
     };
     return `${year} ${monthNames[month] || ''}`;
 }
-
-// Get the grid container
 
 const grid = document.querySelector('.subject-grid');
 
@@ -30,7 +28,6 @@ function createSubjectCard(subject) {
         examData[subject].forEach(exam => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            // Use relative paths for the proxy
             link.href = `proever/shared/exam-start.html?exam=${exam.path}`;
             link.textContent = `${exam.name} (${formatDate(exam.date)})`;
             listItem.appendChild(link);
@@ -46,8 +43,23 @@ function createSubjectCard(subject) {
     return card;
 }
 
-// Generate and display all subject cards
-subjects.forEach(subject => {
-    const card = createSubjectCard(subject);
-    grid.appendChild(card);
-});
+// Initialize exam data and then create cards
+async function initializeAndCreateCards() {
+    try {
+        await initializeExamData();
+        subjects.forEach(subject => {
+            const card = createSubjectCard(subject);
+            grid.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Error initializing and creating cards:', error);
+        // Show error message to user
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'error-message';
+        errorMsg.textContent = 'Der opstod en fejl ved indlæsning af eksamener.';
+        grid.appendChild(errorMsg);
+    }
+}
+
+// Start initialization when page loads
+document.addEventListener('DOMContentLoaded', initializeAndCreateCards);

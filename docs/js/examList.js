@@ -1,3 +1,5 @@
+import { scanExams } from './examScanner.js';
+
 // List of all possible subjects
 export const subjects = [
 	"Biologi",
@@ -10,20 +12,15 @@ export const subjects = [
 	"Fysik/kemi"
 ];
 
-// Mapping of subjects to their exam folders
-export const examData = {
-	"Dansk": [
-		{
-			name: "Skriftlig Fremstilling",
-			date: "2023-05-02",
-			path: "proever/FP9_dansk/2023-05-02_Skriftlig_Fremstilling/index.html"
-		}
-	],
-	"Matematik": [
-		{
-			name: "Med Hjælpemidler",
-			date: "2023-12-04",
-			path: "proever/FP9_matematik/2023-12-04_Med_Hjaelpemidler/index.html"
-		}
-	]
-};
+// Initialize empty exam data
+export let examData = {};
+
+// Function to initialize exam data
+export async function initializeExamData() {
+	try {
+		examData = await scanExams();
+	} catch (error) {
+		console.error('Error initializing exam data:', error);
+	}
+}
+
