@@ -24,7 +24,7 @@ function createSubjectCard(subject) {
     const examList = document.createElement('ul');
     examList.className = 'exam-list';
 
-    if (examData[subject]) {
+    if (examData[subject] && examData[subject].length > 0) {
         examData[subject].forEach(exam => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');

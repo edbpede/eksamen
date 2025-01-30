@@ -1,7 +1,7 @@
 // Function to scan exams using the JSON index file
 export async function scanExams() {
 	try {
-		const response = await fetch('../proever/exam-index.json');
+		const response = await fetch('proever/exam-index.json');
 		if (!response.ok) throw new Error('Failed to fetch exam index');
 		
 		const examData = await response.json();
@@ -10,5 +10,4 @@ export async function scanExams() {
 		console.error('Error scanning exams:', error);
 		return {};
 	}
-
 }
