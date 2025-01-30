@@ -12,9 +12,10 @@ A modern web-based archive system for Danish FP9 (9th grade) examination materia
 
 ## Subjects
 
-Currently includes examination materials for:
+The system is structured to support examination materials for:
 
 - Danish (Dansk)
+- English (Engelsk)
 - Mathematics (Matematik)
 
 ## Technology
@@ -46,6 +47,11 @@ Exams should be added to their respective subject folders following these naming
 Format: `YYYY-MM-DD_Skriftlig_Fremstilling`
 Example: `2023-05-02_Skriftlig_Fremstilling`
 
+### English (FP9_engelsk)
+
+Format: `YYYY-MM-DD_Reading_Test`
+Example: `2024-01-15_Reading_Test`
+
 ### Mathematics (FP9_matematik)
 
 Format: `YYYY-MM-DD_Med_Hjaelpemidler`
@@ -56,6 +62,7 @@ Example: `2023-12-04_Med_Hjaelpemidler`
 Place exam files in:
 
 - `/docs/proever/FP9_dansk/` for Danish exams
+- `/docs/proever/FP9_engelsk/` for English exams
 - `/docs/proever/FP9_matematik/` for Mathematics exams
 
 Each exam folder should contain:
