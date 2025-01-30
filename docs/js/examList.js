@@ -2,15 +2,11 @@ import { scanExams } from './examScanner.js';
 
 // List of all possible subjects
 export const subjects = [
-	"Biologi",
-	"Dansk", 
-	"Matematik",
-	"Engelsk",
-	"Tysk",
-	"Fransk",
-	"Geografi",
-	"Fysik/kemi"
+	"Dansk",
+	"Matematik", 
+	"Engelsk"
 ];
+
 
 // Initialize empty exam data
 export let examData = {};
