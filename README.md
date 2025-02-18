@@ -12,18 +12,11 @@ A modern web-based archive system for Danish FP9 (9th grade) examination materia
 
 ## Subjects
 
-The system is structured to support examination materials for:
-
-- Danish (Dansk)
-- English (Engelsk)
-- Mathematics (Matematik)
+The system is structured to support examination materials for all subjects in FP9 and FP10
 
 ## Technology
 
-- Pure HTML5, CSS3, and JavaScript
-- No external dependencies
-- Static site architecture
-- Module-based JavaScript structure
+<img src="https://up.shx.gg/6_fNnXp1C.png" alt="Technology Diagram" width="50%">
 
 ## Development
 
