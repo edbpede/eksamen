@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FP9 Dansk - Læsning & Retskrivning (december 2022)</title>
+	<style>
+		:root {
+			--primary-color: #2c3e50;
+			--secondary-color: #3498db;
+			--background-color: #ecf0f1;
+			--text-color: #2c3e50;
+			--card-bg: #ffffff;
+			--shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		body {
+			font-family: "Arial", sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: var(--background-color);
+			color: var(--text-color);
+			line-height: 1.6;
+		}
+
+		header {
+			background-color: var(--primary-color);
+			color: white;
+			padding: 2rem;
+			text-align: center;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 2rem;
+		}
+
+		header p {
+			margin: 0.5rem 0 0;
+			font-size: 1.1rem;
+			opacity: 0.9;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 2rem;
+		}
+
+		.section {
+			background: var(--card-bg);
+			border-radius: 8px;
+			padding: 1.5rem;
+			margin-bottom: 1.5rem;
+			box-shadow: var(--shadow);
+		}
+
+		.section h2 {
+			margin: 0 0 1rem;
+			color: var(--primary-color);
+			font-size: 1.5rem;
+			border-bottom: 2px solid var(--secondary-color);
+			padding-bottom: 0.5rem;
+		}
+
+		.pdf-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.pdf-list li {
+			margin: 0.75rem 0;
+		}
+
+		.pdf-link {
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+			padding: 1rem;
+			background: var(--background-color);
+			border-radius: 6px;
+			text-decoration: none;
+			color: var(--text-color);
+			transition: all 0.2s ease;
+		}
+
+		.pdf-link:hover {
+			background: var(--secondary-color);
+			color: white;
+			transform: translateX(5px);
+		}
+
+		.pdf-icon {
+			font-size: 1.5rem;
+		}
+
+		.pdf-info {
+			flex: 1;
+		}
+
+		.pdf-title {
+			font-weight: bold;
+			display: block;
+		}
+
+		.pdf-description {
+			font-size: 0.9rem;
+			opacity: 0.8;
+		}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 1rem;
+			color: var(--secondary-color);
+			text-decoration: none;
+			font-size: 0.95rem;
+		}
+
+		.back-link:hover {
+			color: var(--primary-color);
+			text-decoration: underline;
+		}
+
+		@media (max-width: 600px) {
+			header {
+				padding: 1.5rem;
+			}
+
+			header h1 {
+				font-size: 1.5rem;
+			}
+
+			main {
+				padding: 1rem;
+			}
+
+			.pdf-link {
+				padding: 0.75rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Læsning & Retskrivning</h1>
+		<p>FP9 Dansk - December 2022</p>
+	</header>
+
+	<main>
+		<section class="section">
+			<h2>Læsning</h2>
+			<ul class="pdf-list">
+				<li>
+					<a href="laesning-tekster.pdf" target="_blank" class="pdf-link">
+						<span class="pdf-icon">📄</span>
+						<span class="pdf-info">
+							<span class="pdf-title">Tekster</span>
+							<span class="pdf-description">Teksterne der skal læses til prøven</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="laesning-opgaver.pdf" target="_blank" class="pdf-link">
+						<span class="pdf-icon">📝</span>
+						<span class="pdf-info">
+							<span class="pdf-title">Opgaver</span>
+							<span class="pdf-description">Opgavehæftet til læseprøven</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h2>Retskrivning</h2>
+			<ul class="pdf-list">
+				<li>
+					<a href="retskrivning-opgaver.pdf" target="_blank" class="pdf-link">
+						<span class="pdf-icon">📝</span>
+						<span class="pdf-info">
+							<span class="pdf-title">Opgaver</span>
+							<span class="pdf-description">Opgavehæftet til retskrivningsprøven</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<a href="../../../" class="back-link">← Tilbage til forsiden</a>
+	</main>
+</body>
+</html>
