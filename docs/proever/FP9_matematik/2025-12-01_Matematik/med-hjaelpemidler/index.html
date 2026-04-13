@@ -1,0 +1,871 @@
+﻿<!DOCTYPE html>
+<html lang="da" translate="no" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google" content="notranslate">
+    <title>FP9 FOLKESKOLENS PRØVER</title>
+
+    <link rel="stylesheet" href="css/tools.css" type="text/css" />
+    <link rel="stylesheet" href="css/mathquill.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css?k=1" type="text/css" />
+    <link rel="stylesheet" media="print" href="css/print.css?k=1">
+    <link rel="stylesheet" href="css/builder.css?k=1" type="text/css" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/uvm-top-logos.js?k=1"></script>
+    <script src="js/uvm_html5_opgave_samlet.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+
+    <script type="text/javascript" src="js/flowtype.js"></script>
+    <script type="text/javascript" src="js/video-player-subtitles.js"></script>
+    <script type="text/javascript" src="js/browser-detect.js"></script>
+    <script type="text/javascript" src="js/video-player-samlet.js"></script>
+    <script type="text/javascript" src="js/audio-player.js"></script>
+    <script type="text/javascript" src="js/imageSlider.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltip.js"></script>
+    <script type="text/javascript" src="js/builder.js?k=1"></script>
+    <script type="text/javascript" src="js/builder-validate.js?k=1"></script>
+    <script type="text/javascript" src="js/mathquill.js"></script>
+
+    <script>
+        function RunBuilder() {
+            if (typeof Builder === "undefined") {
+                setTimeout(function () {
+                    RunBuilder();
+                }, 10);
+                return;
+            }
+        }
+        RunBuilder();
+    </script>
+</head>
+
+<body data-taskid="" data-fag="fs" style="visibility:hidden">
+    <div class="wrapper">
+        <!--End Top-->
+        <div class="main">
+            <div id="menuWrapper">
+                <div class="sub-title">
+                </div>
+                <div id="menu">
+                </div>
+
+                <!-- END MENU -->
+                <div id="taskNumber"></div>
+            </div>
+
+            <div id="content">
+                <div class="top">
+                    <div id="uvmLogo"><img src="images/uvm_logo_stuk.png" alt="" /></div>
+                </div>
+
+                <!-- Frontpage -->
+                <div class="PAGE" data-id="1" data-parentid="0" data-layout="0" data-menutekst="Forside">
+                    <div style="height:95px;">&nbsp;</div>
+                    <div>
+                        <div class="titleColor">
+                            Matematik
+                        </div>
+                        <br>
+                        <div class="content-text">
+                            <div class="headline">
+                                <div id="ordning">
+                                    Prøven med hjælpemidler
+                                </div>
+                                <div id="delprove">
+                                    Opgavehæfte
+                                </div>
+                                <div id="timeofexam">
+                                    Prøven varer 3 timer (180 minutter)<br>
+                                </div>
+                                <div id="dateofexam">
+                                    Mandag den 1. december 2025<br>
+                                    Kl. 10.00-13.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Mellemrum-->
+                <div class="PAGE" data-id="2" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+                <!--Vejledning-->
+                <div class="PAGE" data-id="3" data-parentid="0" data-layout="0" data-menutekst="Vejledning">
+                    <p>
+                      Kære elev<br><br>
+                      Prøven består af 7 opgaver. Du har 3 timer til at løse dem.<br>
+                      Ved hver opgave står der, hvor mange point den højst kan give.<br>
+                      Prøven kan i alt højst give 66 point. Du bestemmer selv, hvilken rækkefølge du laver opgaverne i, og hvor lang tid du vil bruge på hver af dem.<br><br>
+
+                      Det er vigtigt, at du begrunder dine svar i <i>alle</i> opgaver.<br>
+                      Det betyder, at du i hver opgave skal vise eller forklare, hvordan du er nået frem til dit svar. Du kan fx begrunde dit svar med regneudtryk eller tegninger med tilhørende skriftlige forklaringer. Det kan være forskelligt fra opgave til opgave, hvordan du begrunder.<br><br>
+                      
+                      En del af de point, du kan få i hver opgave, kommer fra dine begrundelser.<br>
+                      I de fleste opgaver kan du ikke få det højeste antal point, hvis du ikke begrunder dit svar, selv om dine resultater er rigtige.<br><br>
+
+                      I nogle af opgaverne skal du beregne et antal eller en størrelse. I andre opgaver skal du vise, hvordan du finder frem til et bestemt resultat eller afgøre, om en påstand er sand eller falsk.<br><br>
+
+                      Der er også opgaver, hvor du skal løse et matematisk problem ved at undersøge. I disse opgaver forventer vi ikke, at du på forhånd kender en metode, du kan bruge til at løse problemet. Ordet ’undersøg’ signalerer, at du selv skal finde på en god måde at løse problemet på ved at bruge matematik, du kender.<br><br>
+                      
+                      God arbejdslyst.<br><br>
+
+                      Styrelsen for Undervisning og Kvalitet
+					</p>
+                    <br><br><br>
+                </div>
+
+                <!--Mellemrum-->
+                <div class="PAGE" data-id="4" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+                <!--Opgave 1-->
+                <div class="PAGE" data-id="5" data-parentid="0" data-layout="0" data-menutekst="Opgave 1" style="display: table-cell; width: 955px;">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number border" style="margin-right:10px;">1</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue border" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Priser på juletræer</h2>
+                                <span style="line-height: 28px;">Opgave 1 giver højst 12 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <table style="width:100%;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td>
+                                    <div style="padding-top:calc(0.1em + 2px);">Frederik køber et juletræ på et julemarked. Prisen afhænger af træets højde. Han skal betale 1,50 kr. pr. centimeter. Han køber også en juletræsfod til 50 kr.
+                                        <br><br>
+                                        <img src="files/matematik_1.png" alt="" style="width: 65%; margin-left: 12%;">
+                                        <div style="font-size: 80%;font-style: italic;width: 82%; text-align: right; margin-top: -4px;">
+                                            Tegninger: Hans Ole Herbst
+                                        </div>
+                                        <br>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue"><b>1.1</b></span>
+                                </td>
+
+                                <td colspan="3">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvad koster et juletræ på 185 cm og en juletræsfod i alt?</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td>
+                                <div style="display: flex;flex-direction: row;width: 100%; margin-bottom: 0;">
+                                    <div style="display: flex;flex-direction: column; padding-top: 20px; padding-right: 100px;">
+                                        <div style="padding-left: 2px;">Frederik betaler i alt 350 kr. for et juletræ og en juletræsfod.</div>
+                                        <div style="display: flex; margin: 20px 0px 0px -46px;">
+                                            <div style="vertical-align: top; width: 42px;">
+                                                <span class="box blue"><b>1.2</b></span>
+                                            </div>
+                                            <div style="padding-right: 100px; padding-left: 6px; padding-top:calc(0.1em + 2px);">Hvor højt er juletræet?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="width:100%;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td>
+                                    <div style="padding-top:calc(0.1em + 2px);">
+                                        <div style="padding-left: 2px;">Rosa køber et juletræ på et andet julemarked. Grafen viser, hvad juletræerne koster uden
+                                            juletræsfod.</div>
+                                        <br><br>
+                                        <div style="font-size: 13px; padding-left: 30px;">
+                                            Pris (kr.)</div>
+                                        <div style="display: flex; flex-direction: row; align-items: end;">
+                                            <img src="files/matematik_2.png" alt="" style="width: 84%;"><span style="padding-bottom: 23px;padding-left: 7px; font-size: 13px;">Højde (cm)</span>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue"><b>1.3</b></span>
+                                </td>
+
+                                <td colspan="3">
+                                    <div style="padding-top:calc(0.1em + 2px);">Forklar, hvad grafen viser om priser for juletræer.</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue"><b>1.4</b></span>
+                                </td>
+
+                                <td colspan="3">
+                                    <div style="padding-top:calc(0.1em + 2px);">Sammenlign priserne på Frederiks og Rosas julemarkeder, og find ud af, hvor det er billigst
+                                        at købe juletræer. Brug evt. svararket.</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Opgave 2-->
+                <div class="PAGE" data-id="6" data-parentid="0" data-layout="0" data-menutekst="Opgave 2">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number border" style="margin-right:10px;">2</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue border" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Krav til pakker</h2>
+                                <span style="line-height: 28px;">Opgave 2 giver højst 9 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td>
+                                <div style="padding-top:calc(0.1em + 2px);">Frederik vil sende en pakke med et fragtfirma. Tegningen viser pakken, der har form som en
+                                    kasse.
+                                    <br><br>
+                                    <img src="files/matematik_3.png" alt="
+                                    bredde: 40 cm
+                                    højde: 30 cm
+                                    højde: 30 cm
+                                    længde: 150 cm
+                                    bredde: 40 cm
+                                    " style="width: 80%; margin-left: 8%;">
+                                    <div style="font-size: 80%;font-style: italic;width: 88%; text-align: center; margin-top: -4px;">
+                                        Tegning: Hans Ole Herbst
+                                    </div>
+                                    <br>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div>
+                        <p style="margin: 20px 0px 5px 50px;">Firmaet stiller to krav til de kasseformede pakker, de fragter.<br>
+                                    Det ene krav er, at pakkens rumfang skal være mindre end 225.000 cm<sup>3</sup>.
+                                </p>
+                    </div>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td>
+                                    <div style="display: flex;flex-direction: row;width: 100%; margin-bottom: 0;">
+                                        <div style="display: flex;flex-direction: column; width: 58%; padding-top: 10px; padding-right: 50px;">
+                                            <div style="display: flex; margin: 20px 0px 0px -46px;">
+                                                <div style="vertical-align: top; width: 42px;">
+                                                    <span class="box blue"><b>2.1</b></span>
+                                                </div>
+                                                <div style="padding-right: 100px; padding-left: 7px; padding-top:calc(0.1em + 2px);">Overholder Frederiks pakke kravet til rumfang?</div>
+                                            </div>
+
+                                            <div style="padding-left: 3px; padding-top: 55px; padding-bottom: 20px;">Det andet krav står i den blå boks.</div>
+                                            <div style="display: flex; margin: 0px 0px 0px -46px;">
+                                                <div style="vertical-align: top; width: 42px;">
+                                                    <span class="box blue"><b>2.2</b></span>
+                                                </div>
+                                                <div style="padding-right: 100px; padding-left: 7px; padding-top:calc(0.1em + 2px);">Overholder Frederiks pakke kravet<br>
+                                                    i den blå boks?</div>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; margin: 20px 0px 0px 0px; width: 42%;">
+                                            <table style="border-collapse: collapse; width: 100%; height: 100px; background: #CCE0EF;" cellpadding="7" border="1">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+
+                                                            Længde + omkreds må højst være 300 cm.<br>
+                                                            <img src="files/matematik_4.png" alt="
+                                                            omkreds
+                                                            længde
+                                                            " style="width: 80%; margin-left: 8%;">
+                                                            Længden er kassens længste side.
+                                                            Omkredsen er 2 · bredde + 2 · højde.
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <p style="margin: 0px 0px 5px 50px;">Frederik har tidligere forsøgt at sende en anden kasseformet pakke, som overholdt kravet i
+den blå boks, men som <i>ikke</i> overholdt kravet til rumfang.
+                                </p>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span
+                                        class="box blue"><b>2.3</b></span>
+                                </td>
+
+                                <td colspan="3">
+                                    <div style="padding-top:calc(0.1em + 2px);">Undersøg og giv et eksempel på, hvilke mål kassens længde, bredde og højde kan have haft.</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br><br>
+                </div>
+
+                <!--Opgave 3-->
+                <div class="PAGE" data-id="7" data-parentid="0" data-layout="0" data-menutekst="Opgave 3">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number border" style="margin-right:10px;">3</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue border" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Påstande om tilbud</h2>
+                                <span style="line-height: 28px;">Opgave 3 giver højst 8 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"></td>
+
+                                <td colspan="3">
+                                    <div style="padding-top:calc(0.1em + 2px);">Rosa, Tobias, Asma og Frederik kommer med hver sin påstand om nogle tilbud, de har set i
+                                        en reklame.<br><br>
+                                        <div style="display: flex;margin: 20px 0px 0px 0px;width: 100%;flex-flow: row-reverse;flex-direction: row;">
+                                            <table style="width: 100%; border: 1px solid #1c5fa3;">
+                                                <tbody>
+                                                    <tr>
+
+                                                        <td>
+                                                            <img src="files/matematik_5_1.png" alt="Appelsiner. Normalpris: 3,75 kr. pr. stk. Køb 8 for 24 kr. Vi får 6,75 kr. i rabat, hvis vi køber 8 appelsiner. Rosa. Tobias. Vi sparer 25% af normalprisen, hvis vi køber 2 pakker marcipan. Marcipan. Normalpris: 29 kr. pr. stk. Køb 2 og få 50% i rabat på den ene." width="95%">
+                                                            <img src="files/matematik_5_2.png" alt="Pebernødder. Tag 3 poser og betal for 2. Vi sparer 50% af normalprisen, hvis vi køber 3 poser pebernødder. Asma. Frederik. Vi får 25% af indholdet i det nye glas uden at betale ekstra. Kirsebærsovs. FØR. NU. 25% mere indhold end før - samme pris." width="95%">
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                            <span style="writing-mode: vertical-lr;transform: rotate(180deg);font-size: 14px;font-style: italic;">Tegninger: Hans Ole Herbst</span>
+
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span
+                                        class="box blue"><b>3.1</b></span>
+                                </td>
+
+                                <td colspan="3">
+                                    <div style="padding-top:calc(0.1em + 2px);">Undersøg hver af de fire elevers påstande. For hver påstand skal du forklare, hvorfor den er
+                                        sand, eller hvorfor den er falsk.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br><br>
+                </div>
+
+                <!--Opgave 4-->
+                <div class="PAGE" data-id="8" data-parentid="0" data-layout="0" data-menutekst="Opgave 4">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number border" style="margin-right:10px;">4</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue border" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Snedække-døgn</h2>
+                                <span style="line-height: 28px;">Opgave 4 giver højst 11 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="width: 100%;">
+                        <table style="padding: 0rem 0rem 3rem 0rem;">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top; width:40px;"></td>
+                                    <td style="width: 65%; padding-right: 30px; vertical-align: center;">
+                                        De to diagrammer herunder viser data om snedække-døgn i danske vintre.<br>
+                                        Diagrammet til venstre viser data om 30 vintre i perioden 1961-1991.<br>
+                                        Diagrammet til højre viser data om 30 vintre i perioden 1991-2021.<br>
+                                        Du kan også se de to datasæt i regnearksfilen <a onclick="UVM.view.funcLoadMenu(13,0);UVM.view.funcLoadContent(13,0);" target="_self" href="#">SNE_DEC_2025</a>.<br>
+
+                                    </td>
+                                    <td>
+
+                                        <span style="display: inline-block;border-collapse: collapse; height: 100%; background: #CCE0EF;border: 1px solid gray;padding: 6px;">
+                                             Et snedække-døgn er et døgn, hvor mere end 50 % af jordoverfladen er dækket af sne.
+                                          </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="padding: 0rem 0rem 1rem 0rem;">
+                            <tbody>
+                                <tr>
+                                    <td style="display: flex; border: 1px solid black; padding: 10px; margin-bottom: 30px;">
+                                        <div>
+                                            <span style="display: block; text-align: center;">Data om 30 vintre fra 1961 til 1991</span>
+                                            <span style="font-size: 14px; padding-left: 37px;">Antal snedække-døgn</span>
+                                            <img src="files/1961-1991.png" alt="" width="100%">
+                                        </div>
+                                        <div>
+                                            <span style="display: block; text-align: center;">Data om 30 vintre fra 1991 til 2021</span>
+                                            <span style="font-size: 14px; padding-left: 37px;">Antal snedække-døgn</span>
+                                            <img src="files/1991-2021.png" alt="" width="100%">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="padding: 0rem 0rem 3rem 0rem;">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top; width: 42px;"><span
+                                                class="box blue"><b>4.1</b></span>
+                                    </td>
+
+                                    <td colspan="3">
+                                        <div style="padding-top:calc(0.1em + 2px);">Hvor mange af vintrene i de to perioder tilsammen har haft mere end 60 snedække-døgn?</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="padding: 0rem 0rem 3rem 0rem;">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top; width: 42px;"><span
+                                                class="box blue"><b>4.2</b></span>
+                                    </td>
+
+                                    <td colspan="3">
+                                        <div style="padding-top:calc(0.1em + 2px);">Sammenlign variationsbredden i datasættene fra de to perioder. Du kan enten aflæse cirkatal
+                                            på diagrammerne eller bruge de præcise tal i regnearksfilen.</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="padding: 0rem 0rem 3rem 0rem;">
+                            <tbody>
+                                <tr>
+                                    <p style="margin: 0px 0px 5px 50px;">I perioden fra 1961-1991 var der i gennemsnit 26,7 snedækkedøgn pr. vinter.</p>
+
+                                    <td style="vertical-align: top; width: 42px;"><span
+                                                class="box blue"><b>4.3</b></span>
+                                    </td>
+
+                                    <td colspan="3">
+                                        <div style="padding-top:calc(0.1em + 2px);">Du skal vise med beregning, at det gennemsnitlige antal snedække-døgn pr. vinter er faldet
+                                            ca. 30 % fra den første til den anden periode.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="padding: 0rem 0rem 3rem 0rem;">
+                            <tbody>
+                                <tr>
+                                    <p style="margin: 0px 0px 5px 50px;">Forestil dig, at udviklingen i antal snedække-døgn fortsætter, som den har gjort siden 1961.</p>
+
+                                    <td style="vertical-align: top; width: 42px;"><span
+                                                class="box blue"><b>4.4</b></span>
+                                    </td>
+
+                                    <td colspan="3">
+                                        <div style="padding-top:calc(0.1em + 2px);">Hvad vil du forvente, at variationsbredden og det gennemsnitlige antal snedække-døgn pr.
+                                            vinter bliver i perioden fra 2021-2051? Du skal begrunde dit svar med beregninger.</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <!--Opgave 5-->
+                <div class="PAGE" data-id="9" data-parentid="0" data-layout="0" data-menutekst="Opgave 5">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number border" style="margin-right:10px;">5</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue border" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Hvor meget juletærte til hver gæst?</h2>
+                                <span style="line-height: 28px;">Opgave 5 giver højst 10 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br />
+                    <div style="width: 100%;">
+                        <table style="padding: 0rem 0rem 3rem 0rem;">
+                            <tbody>
+                                <tr>
+                                    <p style="margin: 0px 0px 5px 50px;">9. klasse planlægger en julefest på skolen. Til festen skal gæsterne have juletærte. Klassen
+diskuterer, hvor mange gæster der skal sidde ved hvert bord, og hvor meget tærte der skal
+være til hver gæst.
+                                  </p>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="padding: 0rem 0rem 3rem 0rem;">
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td>
+                                    <div style="display: flex;flex-direction: row;width: 100%; margin-bottom: 0;">
+                                        <div style="display: flex;flex-direction: column; width: 58%; padding-top: 20px; padding-right: 50px;">
+                                            <span>Rosa foreslår, at der skal sidde 9 gæster ved hvert
+                                            bord, og at hver gæst skal have <div class="fraction"><span style="font-size: 80%;">1</span><span class="bar">/</span><span class="fdn"><span style="font-size: 80%;">3</span></span>
+                                        </div> tærte.</span>
+                                        <div style="display: flex; margin: 20px 0px 0px -46px;">
+                                            <div style="vertical-align: top; width: 42px;">
+                                                <span class="box blue"><b>5.1</b></span>
+                                            </div>
+                                            <div style="padding-right: 100px; padding-left: 9px; padding-top:calc(0.1em + 2px);">
+                                                Du skal vise med tegning eller beregning, at der skal
+                                                være 3 tærter til et bord med 9 gæster, hvis klassen
+                                                følger Rosas forslag.
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div style="display: flex; margin: 20px 0px 0px -46px;">
+                                            <div style="vertical-align: top; width: 42px;">
+                                                <span class="box blue"><b>5.2</b></span>
+                                            </div>
+                                            <div style="padding-right: 100px; padding-left: 9px; padding-top:calc(0.1em + 2px);">
+                                                Hvor meget tærte skal der være til et bord med <i>n</i> gæster, hvis hver gæst skal have
+                                                <div class="fraction"><span style="font-size: 80%;">1</span><span class="bar">/</span><span class="fdn"><span style="font-size: 80%;">3</span></span></div> tærte?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="width: 42%;">
+                                        <table cellpadding="7">
+                                            <tbody>
+                                                <tr>
+                                                    <img src="files/matematik_6.png" alt="" width="100%">
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                    </div>
+                    </td>
+                    </tr>
+                    </table>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td>
+                                <div style="display: flex;flex-direction: row;width: 100%; margin-bottom: 0;">
+                                    <div style="display: flex;flex-direction: column; width: 49%; padding-top: 20px; padding-right: 50px;">
+                                        Frederik foreslår, at der skal sidde
+                                        10 gæster og være 4 tærter ved hvert
+                                        bord.
+                                        <div style="display: flex; margin: 20px 0px 0px -46px;">
+                                            <div style="vertical-align: top; width: 42px;">
+                                                <span class="box blue"><b>5.3</b></span>
+                                            </div>
+                                            <div style="padding-right: 25px; padding-left: 9px; padding-top:calc(0.1em + 2px);">
+                                                Hvor meget mere tærte får hver gæst i
+                                                Frederiks forslag sammenlignet med
+                                                Rosas forslag?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="width: 51%;">
+                                        <table cellpadding="7">
+                                            <tbody>
+                                                <tr>
+                                                    <img src="files/matematik_7.png" alt="" width="100%">
+                                                    <div style="font-size: 80%;font-style: italic;width: 88%; text-align: right; margin-top: -4px;">
+                                                        Tegninger: Hans Ole Herbst
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="padding: 0rem 0rem 3rem 0rem;">
+                        <tbody>
+                            <tr>
+                                <div style="margin: 0px 0px 5px 50px;">
+                                    Asma foreslår, at antallet af gæster og antallet af tærter ved hvert bord skal være, så der
+                                    bliver mere end <div class="fraction"><span style="font-size: 80%;">1</span><span class="bar">/</span><span class="fdn"><span style="font-size: 80%;">3</span></span></div> tærte, men mindre end <div class="fraction"><span style="font-size: 80%;">2</span><span class="bar">/</span><span class="fdn"><span style="font-size: 80%;">5</span></span></div> tærte til hver gæst.
+                                </div>
+
+                                <td style="vertical-align: top; width: 42px;"><span
+                                          class="box blue"><b>5.4</b></span>
+                                </td>
+
+                                <td colspan="3">
+                                    <div style="padding-top:calc(0.1em + 2px);">Undersøg og giv et eksempel på, hvor mange gæster og hvor mange hele tærter, der kan
+                                        være ved hvert bord, så Asmas forslag bliver gennemført.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br><br><br>
+            </div>
+
+            <!--Opgave 6-->
+            <div class="PAGE" data-id="10" data-parentid="0" data-layout="0" data-menutekst="Opgave 6">
+                <div class="box-group">
+                    <div class="group">
+                        <h1 class="box blue header-number border" style="margin-right:10px;">6</h1>
+                    </div>
+                    <div class="group fill">
+                        <span class="box fill blue border" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Arealet af et særligt rektangel</h2>
+                                <span style="line-height: 28px;">Opgave 6 giver højst 9 point</span>
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <table style="width:100%;">
+                    <tr>
+                        <td style="vertical-align: top;width:40px;"></td>
+                        <td>
+                            <div style="padding-top:calc(0.1em + 2px);">Tegningen viser et rektangel. De variable <i>a</i> og <i>b</i> beskriver sidelængderne i rektanglet.
+                                <br>Rektanglet ændrer størrelse, hvis <i>a</i> og <i>b</i> ændrer værdi.
+                                <br><br>
+                                <img src="files/matematik_8.png" alt="
+                                a b 
+                                a
+                                " style="width: 60%; margin-left: 17%;">
+                                <br><br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table style="padding: 0rem 0rem 3rem 0rem;">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span
+                                        class="box blue"><b>6.1</b></span>
+                            </td>
+
+                            <td colspan="3">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Hvor stort er arealet af rektanglet, hvis <i>a</i> = 5, og <i>b</i> = 7?
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="padding: 0rem 0rem 3rem 0rem;">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span
+                                        class="box blue"><b>6.2</b></span>
+                            </td>
+
+                            <td colspan="3">
+                                <div style="padding-top:calc(0.1em + 2px);">Giv et eksempel på, hvilke værdier <i>a</i> og <i>b</i> kan have, hvis arealet af rektanglet er 24.</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="padding: 0rem 0rem 3rem 0rem;">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span
+                                        class="box blue"><b>6.3</b></span>
+                            </td>
+
+                            <td colspan="3">
+                                <div style="padding-top:calc(0.1em + 2px);">Skriv et udtryk med <i>a</i> og <i>b</i>, som man kan bruge til at beregne arealet af rektanglet, uanset
+                                    hvilke værdier <i>a</i> og <i>b</i> har.</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table style="padding: 0rem 0rem 3rem 0rem;">
+                    <tbody>
+                        <tr>
+
+                            <p style="margin: 0px 0px 5px 50px;">I opgave 6.4 skal <i>a</i> og <i>b</i> være hele tal større end 0.</p>
+
+                            <td style="vertical-align: top; width: 42px;"><span
+                                        class="box blue"><b>6.4</b></span>
+                            </td>
+
+                            <td colspan="3">
+                                <div style="padding-top:calc(0.1em + 2px);">Undersøg, hvilke værdier <i>a</i> og <i>b</i> kan have, hvis arealet af rektanglet er 72.<br>
+                                    Skriv så mange forskellige værdier som muligt.</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br><br>
+            </div>
+
+            <!--Opgave 7-->
+            <div class="PAGE" data-id="11" data-parentid="0" data-layout="0" data-menutekst="Opgave 7">
+                <div class="box-group">
+                    <div class="group">
+                        <h1 class="box blue header-number border" style="margin-right:10px;">7</h1>
+                    </div>
+                    <div class="group fill">
+                        <span class="box fill blue border" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Hvor store er vinklerne?</h2>
+                                <span style="line-height: 28px;">Opgave 7 giver højst 7 point</span>
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <table style="width: 100%;">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td>
+                                <div style="padding-top:calc(0.1em + 2px);">Tegningen viser en blå trekant, en sort firkant og en rød femkant. Trekanten, firkanten og
+                                    femkanten er regulære polygoner. De tre regulære polygoner er placeret, så de danner to nye
+                                    trekanter, <i>ABC</i> og <i>DEF</i>, der ikke er regulære.
+                                    <br>
+                                    <br>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <td width="50%">
+                                <div style="padding-top:calc(0.1em + 2px); margin-left: 36px;">
+                                    <img width="100%" src="files/matematik_9.png" alt="C F D A B E">
+                                </div>
+                            </td>
+
+                            <td width="22%">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    <span style="display: inline-block;
+    border-collapse: collapse;
+    height: 100%;
+    background: #CCE0EF;
+    border: 1px solid gray;
+    padding: 6px;
+    margin-left: 30px;">
+  Vinklerne i en regulær
+                                    polygon er lige store.<br><br>
+                                    Vinkelsummen i en
+                                    polygon med <i>n</i> kanter
+                                    er (<i>n</i> – 2) · 180°.
+                                    </span>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <table style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span
+                                        class="box blue"><b>7.1</b></span>
+                            </td>
+
+                            <td colspan="3">
+                                <div style="padding-top:calc(0.1em + 2px);">Du skal finde frem til størrelsen på så mange af de i alt 6 vinkler i trekant <i>ABC</i> og <i>DEF</i> som
+                                    muligt. Du skal begrunde dine svar med beregninger og viden om figurer - ikke kun med mål
+                                    fra et geometriprogram.</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br><br>
+            </div>
+
+
+            <!--Mellemrum-->
+            <div class="PAGE" data-id="12" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+            <!--Regneark til opgave 4-->
+            <div class="PAGE" data-id="13" data-parentid="0" data-layout="0" data-menutekst="Regneark til opgave 4">
+                <div class="box-group">
+                    <div class="group fill" style="width: 100%;">
+                        <span class="box fill blue border" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Regneark til opgave 4</h2>
+                                <span style="line-height: 28px;">&nbsp;</span>
+                        </span>
+                    </div>
+                </div>
+                <br>
+                <a class="pdfLink" id="pdfLink13" href="files/SNE_DEC_2025.xlsx" target="_blank">Excel</a>
+                <br><br><br>
+                Du kan tilgå regnearket som en Sheets-fil via linket nedenfor, hvis I anvender Sheets-filer på din skole.
+                <br><br>
+				<a href="https://docs.google.com/spreadsheets/d/11lA207bm_JbFh3tIQgbeWiC0O5g2OxT6GrKfCDqY8eA/copy" target="_blank">Google Sheets</a>
+            </div>
+
+            <div class="PAGE" data-id="14" data-parentid="0" data-layout="0" data-menutekst="Prøvesættet er underlagt ophavsret. Læs mere her." style="display: table-cell; width: 955px;">
+                <div class="ophavsret" style="border: solid black 1px; padding: 25px 25px 10px; font-style: italic; line-height: 1.4;" data-mce-style="border: solid black 1px; padding: 25px 25px 10px; font-style: italic; line-height: 1.4;">
+                    <h2><i>Det følgende er ikke en del af prøven:</i></h2>
+                    <p><i>Dette prøvesæt er omfattet af ophavsretten, jf. ophavsretslovens &sect; 1.<br><br>
+                                Prøvesættet må alene anvendes til den på prøvesættet anførte prøve.<br><br>
+                                Al anden anvendelse af prøvesættet, herunder visning eller deling f.eks. via
+                                internettet, sociale medier, portaler og bøger, udgør en krænkelse af Børne- og
+                                Undervisningsministeriets og evt. tredjemands ophavsret og er ikke tilladt.<br><br>
+                                Overtrædelse af ophavsretten kan være erstatningspådragende og/eller strafbart.<br><br>
+                                Prøvesættet kan dog, efter at prøven er afsluttet, anvendes til undervisningsbrug på
+                                uddannelser m.v. omfattet af den lovgivning, som Styrelsen for Undervisning og Kvalitet
+                                administrerer.</i></p>
+                </div>
+            </div>
+
+        </div> <!-- END CONTENT -->
+    </div> <!-- END MAIN -->
+    </div>
+    <script type="text/javascript" src="js/scrollbar.js" defer></script>
+</body>
+
+</html>
