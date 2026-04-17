@@ -1,0 +1,177 @@
+.gate {
+  min-height: 100vh;
+  border-top: 4px solid var(--accent);
+  padding: var(--sp-8);
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.gate__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--sp-12);
+  transition: color 150ms ease;
+}
+
+.gate__back:hover {
+  color: var(--accent);
+}
+
+.gate__overline {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+}
+
+.gate__icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+
+.gate__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.gate__title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--sp-6);
+}
+
+.gate__body {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin: 0 0 var(--sp-12);
+  max-width: 52ch;
+}
+
+.gate__action {
+  position: relative;
+  min-height: 3.25rem;
+}
+
+.gate__button {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.95rem 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background 150ms ease;
+}
+
+.gate__button:hover {
+  background: var(--accent);
+}
+
+.gate__button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.gate__panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.gate__panel-prompt {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.gate__panel-btn {
+  padding: 0.7rem 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--rule-strong);
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.gate__panel-btn--cancel {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.gate__panel-btn--cancel:hover {
+  background: var(--paper-alt);
+}
+
+.gate__panel-btn--confirm {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--paper);
+}
+
+.gate__panel-btn--confirm:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.gate__panel-btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.gate[data-state="confirm"] .gate__button {
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.gate[data-state="confirm"] .gate__panel {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+@media (max-width: 479px) {
+  .gate {
+    padding: var(--sp-6) var(--sp-4);
+  }
+
+  .gate__back {
+    margin-bottom: var(--sp-8);
+  }
+
+  .gate__action {
+    min-height: auto;
+  }
+
+  .gate__panel {
+    position: static;
+    margin-top: var(--sp-4);
+  }
+}
