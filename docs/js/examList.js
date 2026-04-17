@@ -20,8 +20,8 @@ export let examData = {};
 export async function initializeExamData() {
   try {
     examData = await scanExams();
-    // Ensure these subjects exist in examData even if empty
-    ["Dansk", "Matematik", "Engelsk"].forEach((subject) => {
+    // Ensure every subject exists in examData even if empty
+    subjects.forEach((subject) => {
       if (!examData[subject]) {
         examData[subject] = [];
       }

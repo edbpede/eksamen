@@ -1,120 +1,53 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<title>Start Prøven</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-	<style>
-		body {
-			margin: 0;
-			font-family: 'Inter', system-ui, -apple-system, sans-serif;
-			background: #f8f9fa;
-		}
-		.wait-screen {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			padding: 2rem;
-			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-		}
-		.wait-content {
-			max-width: 600px;
-			width: 90%;
-			text-align: center;
-			background: white;
-			padding: 3rem;
-			border-radius: 16px;
-			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-			animation: slideUp 0.6s ease-out;
-		}
-		@keyframes slideUp {
-			from { transform: translateY(20px); opacity: 0; }
-			to { transform: translateY(0); opacity: 1; }
-		}
-		.warning-icon {
-			width: 64px;
-			height: 64px;
-			margin: 0 auto 1.5rem;
-			background: #fff3cd;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 2rem;
-			animation: pulse 2s infinite;
-		}
-		@keyframes pulse {
-			0% { transform: scale(1); }
-			50% { transform: scale(1.05); }
-			100% { transform: scale(1); }
-		}
-		.wait-title {
-			font-size: 2rem;
-			color: #212529;
-			margin-bottom: 1.5rem;
-			font-weight: 600;
-		}
-		.wait-message {
-			font-size: 1.1rem;
-			line-height: 1.7;
-			color: #495057;
-			margin-bottom: 2.5rem;
-		}
-		.start-button {
-			background: #228be6;
-			color: white;
-			border: none;
-			padding: 1rem 2.5rem;
-			font-size: 1.1rem;
-			border-radius: 8px;
-			cursor: pointer;
-			transition: all 0.2s ease;
-			font-weight: 500;
-			font-family: 'Inter', sans-serif;
-		}
-		.start-button:hover {
-			background: #1971c2;
-			transform: translateY(-1px);
-			box-shadow: 0 4px 12px rgba(34, 139, 230, 0.2);
-		}
-		.start-button:active {
-			transform: translateY(0);
-		}
-	</style>
-</head>
-<body>
-	<div class="wait-screen">
-		<div class="wait-content">
-			<div class="warning-icon">⚠️</div>
-			<h1 class="wait-title">Vent venligst</h1>
-			<p class="wait-message">
-				Du må ikke starte prøven, før din lærer har givet tilladelse til det.<br><br>
-				Når du trykker på "Start Prøven", vil prøven begynde. Sørg for at du er klar og har alt det nødvendige udstyr.
-			</p>
-			<button class="start-button" onclick="confirmStart()">Start Prøven</button>
-		</div>
-	</div>
-	<script>
-		// @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-3.0
-		function confirmStart() {
-			if (confirm('Er du sikker på, at du vil starte prøven?\n\nHusk: Din lærer skal have givet tilladelse til at starte.')) {
-				const urlParams = new URLSearchParams(window.location.search);
-				const examPath = urlParams.get('exam');
-				if (examPath) {
-					window.location.href = '../' + examPath;
-				}
-			}
-		}
-		// @license-end
-	</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Start Prøven</title>
+    <link rel="stylesheet" href="../../css/shared.css" />
+    <link rel="stylesheet" href="exam-start.css" />
+  </head>
+  <body>
+    <main class="gate" data-state="idle">
+      <a class="gate__back" href="/">← Tilbage til arkivet</a>
+
+      <div class="gate__overline">
+        <svg
+          class="gate__icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <polygon points="12,2 22,21 2,21" fill="#ff4d00" />
+          <rect x="11" y="9" width="2" height="6" fill="#ffffff" />
+          <rect x="11" y="17" width="2" height="2" fill="#ffffff" />
+        </svg>
+        <span class="gate__eyebrow">Vigtig besked</span>
+      </div>
+
+      <h1 class="gate__title">Vent venligst</h1>
+
+      <p class="gate__body">
+        Du må ikke starte prøven, før din lærer har givet tilladelse til det.
+        Når du trykker på &bdquo;Start Prøven&ldquo;, vil prøven begynde. Sørg
+        for at du er klar og har alt det nødvendige udstyr.
+      </p>
+
+      <div class="gate__action">
+        <button type="button" class="gate__button">Start Prøven</button>
+        <div class="gate__panel" role="group" aria-label="Bekræft start">
+          <span class="gate__panel-prompt">Er du sikker?</span>
+          <button type="button" class="gate__panel-btn gate__panel-btn--cancel">
+            Annullér
+          </button>
+          <button type="button" class="gate__panel-btn gate__panel-btn--confirm">
+            Ja, start
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="exam-start.js"></script>
+  </body>
 </html>
