@@ -1,0 +1,2747 @@
+<!DOCTYPE html>
+<html lang="da" translate="no" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opt251-04042025</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/builder.css?k=1" type="text/css" />
+    <link rel="stylesheet" href="css/print.css" type="text/css">
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/builder.js?k=1"></script>
+    <script type="text/javascript" src="js/builder-validate.js?k=1"></script>
+    <script type="text/javascript" src="js/builder_timekeeper.js?k=1"></script>
+    <script type="text/javascript" src="js/crypto/aes.js"></script>
+    <script type="text/javascript" src="js/ckeditor_classic/build/ckeditor.js"></script>
+
+    <!-- MATHQUILL -->
+    <script type="text/javascript" src="mathquill/mathquill.js"></script>
+    <link rel="stylesheet" href="mathquill/mathquill.css" type="text/css" />
+</head>
+
+<body data-taskid="Opt251-04042025" data-fag="nothing" spellcheck="false" data-timekeeper="">
+    <div id="browserCheckPopup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Opdater din browser eller vælg en anden browser</h2>
+            <p>Du skal opdatere din browser, for at kunne tilgå optagelsesprøven.</p>
+            <p>Du kan opdatere din browser her:<br>
+            <ul>
+                <li><a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a></li>
+                <li><a href="https://www.microsoft.com/en-us/edge/download" target="_blank">Microsoft
+                        Edge</a></li>
+                <li><a href="https://support.mozilla.org/en-US/kb/update-firefox-latest-release"
+                        target="_blank">Firefox</a></li>
+                <li><a href="https://support.apple.com/en-us/102665" target="_blank">Safari</a></li>
+            </ul>
+
+            <p>Du kan kun tilgå optagelsesprøven i de ovennævnte browsere. Er du ved at tilgå prøven i en anden browser,
+                skal du lukke browseren og åbne optagelsesprøven i en anden browser.
+            </p>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <header class="header">
+            <div class="header__title">
+                Optagelsesprøve til de gymnasiale uddannelser
+            </div>
+            <img src="images/logo_STUK.jpg">
+        </header>
+
+        <section>
+            <!-- NAVIGATION -->
+            <nav class="nav">
+                <a class="nav__link nav__link--active" data-target="forside" tabindex="0">Forside</a>
+                <div class="nav-overview">
+                    <a class="nav__link" data-target="dansk" tabindex="0">Dansk</a>
+                    <div class="nav__sub-menu" data-parent="dansk">
+                        <a class="nav__sub-link" data-target="dansk-1" tabindex="0">Læsefærdighed - Tekst 1</a>
+                        <a class="nav__sub-link" data-target="dansk-2" tabindex="0">Læsefærdighed - Tekst 2</a>
+                        <a class="nav__sub-link" data-target="dansk-3" tabindex="0">Grammatisk færdighed</a>
+                        <a class="nav__sub-link" data-target="dansk-4" tabindex="0">Skriftlig færdighed</a>
+                    </div>
+                </div>
+                <div class="nav-overview">
+                    <a class="nav__link" data-target="engelsk" tabindex="0">Engelsk</a>
+                    <div class="nav__sub-menu" data-parent="engelsk">
+                        <a class="nav__sub-link" data-target="engelsk-1" tabindex="0">Section 1</a>
+                        <a class="nav__sub-link" data-target="engelsk-2" tabindex="0">Section 2</a>
+                        <a class="nav__sub-link" data-target="engelsk-3" tabindex="0">Section 3</a>
+                        <a class="nav__sub-link" data-target="engelsk-4" tabindex="0">Section 4</a>
+                        <a class="nav__sub-link" data-target="engelsk-5" tabindex="0">Section 5</a>
+                    </div>
+                </div>
+                <div class="nav-overview">
+                    <a class="nav__link" data-target="matematik" tabindex="0">Matematik</a>
+                    <div class="nav__sub-menu" data-parent="matematik">
+                        <a class="nav__sub-link" data-target="matematik-1" tabindex="0">Opgaver</a>
+                    </div>
+                </div>
+                <div class="nav-overview">
+                    <a class="nav__link" data-target="fysik-kemi" tabindex="0">Fysik/kemi</a>
+                    <div class="nav__sub-menu" data-parent="fysik-kemi">
+                        <a class="nav__sub-link" data-target="fysik-kemi-1" tabindex="0">1. Atomer og grundstoffer
+                        </a>
+                        <a class="nav__sub-link" data-target="fysik-kemi-2" tabindex="0">2. Isolering af hus</a>
+                        <a class="nav__sub-link" data-target="fysik-kemi-3" tabindex="0">3. Nitrogens kredsløb</a>
+                        <a class="nav__sub-link" data-target="fysik-kemi-4" tabindex="0">4. Vandkraft</a>
+                        <a class="nav__sub-link" data-target="fysik-kemi-5" tabindex="0">5. Ballon</a>
+                        <a class="nav__sub-link-external" href="files/23958_fys_grundstoffernes_periodesystem.pdf"
+                            target="_blank" tabindex="0">Grundstofferne
+                            periodesystem</a>
+                    </div>
+                </div>
+                <a class="nav__link" data-target="copydan" tabindex="0">Oplysninger til brug for Copydan</a>
+                <a class="nav__link-external" href="#" id="printButton" tabindex="0">Dan og gem pdf</a>
+                <a class="nav__link nav__link" data-target="Ophavsret" tabindex="0">Prøvesættet er underlagt
+                    ophavsret</a>
+                <div class="nav__bottom"><span x-apple-data-detectors="false">Opt251-04042025</span></div>
+            </nav>
+
+            <!-- Main wraps all pages -->
+            <main>
+                <!-- Find correct id from data-target in navigation + use class "page" for all pages. -->
+                <!-- Frontpage should always contain "page--visible" class -->
+                <div id="forside" class="page page--visible" data-frontpage>
+                    <div data-tech-info></div>
+                    <h1 class="frontpage__heading">Optagelsesprøve til de gymnasiale uddannelser</h1>
+                    <div class="date-time">
+
+                        <p>Fredag den 4. april 2025<br>
+                            Kl. 10.00-14.00</p>
+                    </div>
+                    <div class="print-hide">
+                        <p>Du har i alt 4 timer til prøven. Du bestemmer selv, i hvilken rækkefølge du besvarer
+                            opgaverne,
+                            og hvor lang tid du bruger på opgaverne i hvert fag.</p>
+
+                        <p>Det er ikke tilladt at bruge internettet som fagligt hjælpemiddel eller foretage søgninger på
+                            internettet, fx ved hjælp af Google.<br>
+                            Det er ikke tilladt at kommunikere med omverdenen.</p>
+
+                        <p>Det er tilladt at benytte alle øvrige hjælpemidler, fx lærebøger, formelsamlinger,
+                            lommeregner,
+                            ordbøger, grammatiske oversigter og noter. Disse hjælpemidler kan enten medbringes på
+                            computeren
+                            eller på papir. Skolen kan tillade, at ordbøger tilgås via internettet.</p>
+                        <p>Din besvarelse skal afleveres i et samlet dokument. Når du er klar til at aflevere din
+                            besvarelse, skal du gøre følgende:</p>
+                        <p>
+                        <ol>
+                            <li>Tryk på knappen ’Dan og gem pdf’ i menuen i venstre side.</li>
+                            <li>Navngiv din besvarelse ’Optagelsesprøve’ og gem dokumentet på din computer.</li>
+                            <li>Aflever din besvarelse i Netprøver.</li>
+                        </ol>
+                        </p>
+
+                        <p>Optagelsesprøven er i udgangspunktet anonym for dem, som skal bedømme din besvarelse. <u>Det
+                                er
+                                derfor vigtigt, at du ikke skriver dit navn noget sted i besvarelsen eller i titlen på
+                                dit
+                                dokument, som du afleverer i Netprøver.</u>
+                        </p>
+                    </div>
+                    <!--we need this to load mathquill-->
+                    <div style="opacity: 0;">
+                        <span class="static-equation"></span>
+                    </div>
+                </div>
+
+                <div id="dansk" class="page page__parent" name="dansk">
+                    <div class="print-hide">
+                        <h1>Dansk</h1>
+                        <p>Prøven i dansk består af tre delprøver: </p>
+                        <ul>
+                            <li>Den første delprøve er en læsefærdighedsprøve, der består af to tekster. Til hver af de
+                                to tekster er udarbejdet 10 opgaver. Alle opgaver skal besvares.</li>
+                            <li>Den anden delprøve er en grammatisk færdighedsprøve, hvor teksten skal omskrives i tid.
+                            </li>
+                            <li>Den tredje delprøve er en skriftlig færdighedsprøve.</li>
+                        </ul>
+
+                        <p>Du kan højst få 25 point i danskprøven:</p>
+                        <div class="assignment__description-line">
+                            <table class="table w-100">
+                                <tr>
+                                    <th class="align-left w-50">Opgave</th>
+                                    <th class="align-left w-50">Antal mulige point</th>
+                                </tr>
+                                <tr class="align-left">
+                                    <th>Læsefærdighed</th>
+                                    <th>12 point</th>
+                                </tr>
+                                <tr class="align-left">
+                                    <th>Grammatisk færdighed</th>
+                                    <th>6 point</th>
+                                </tr>
+                                <tr class="align-left">
+                                    <th>Skriftlig færdighed</th>
+                                    <th>7 point</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dansk-1" class="page page__child">
+                    <h1 class="print-assignment-title">Dansk</h1>
+                    <h2>Læsefærdighed - Tekst 1</h2>
+                    <div class="print-hide">
+                        <p>Til teksten er udarbejdet 10 opgaver. Der er kun ét rigtigt svar til hver opgave.<br>
+                            For at opnå 12 point i den samlede læsefærdighedsprøve (tekst 1 og 2) skal mindst 18 af de i
+                            alt 20 opgaver i prøven være korrekt besvaret.</p>
+                        <div class="blue-box">
+                            Læs novellen <i>Jeg hedder ikke Freja</i> og besvar opgaverne ud fra
+                            tekstens indhold.
+                        </div>
+                        <p><b>Jeg hedder ikke Freja</b></p>
+                        <p><i>Af Simon Fruelund</i></p>
+
+                        <div class="line-height-2">
+                            <p>
+                                - Fat det nu. Du er en fucking tramper. Det er her du hører til.<br>
+								<span class="in-word">Magnus</span> sad i den anden ende af bænken, så langt væk han kunne komme, og jeg sagde:<br>
+								<span class="in-word">-</span> Drømmer du aldrig om at komme væk fra Skibby? Om at der skal ske noget andet?<br>
+								<span class="in-word">Han</span> stirrede på sine gråhvide gummisko for enden af de tynde ben. Hans mund var mærkelig
+                                kantet.<br>
+								<span class="in-word">-</span> Vil du virkelig gerne være en af dem? En af de der piger med langt lyst hår, der
+                                smiler til læreren og siger det, han gerne vil høre? Som bor i et hus, hvor alting er
+                                sort og hvidt og nyt.<br>
+								<span class="in-word">-</span> Se på mig. Hvor stor er chancen lige for det?<br>
+								<span class="in-word">Han</span> trak på skulderen og kiggede væk - over mod det lille torv foran slikbutikken og
+                                burgerrestauranten, hvor der stod nogle caféborde og stole. Jeg kunne se, at der sad en
+                                familie og spiste softice, de lignede ikke nogen her fra området, sommerhusgæster på vej
+                                mod Kulhuse måske, de så så nyvaskede og afslappede ud i deres pastelfarvede
+                                T-shirts.<br>
+								<span class="in-word">-</span> Men okay, sagde han og rejste sig op, det er dit liv.<br>
+								<span class="in-word">Han</span> gik over til Netto, hvor hans crosser stod lige ved siden af buret med de tomme
+                                mælkekasser.<br>
+								<span class="in-word">Han</span> tog hjelmen på med begge hænder, skubbede knallerten fremad og ned fra støttebenet,
+                                satte sig op og kørte hen forbi thai-stedet og ud ad bymidten.<br>
+								<span class="in-word">Jeg</span> har kendt Magnus siden 0. klasse, og vi har aldrig været uvenner før. Der har været
+                                perioder undervejs, hvor vi ikke har været venner, f.eks. den sommer i femte klasse,
+                                hvor han kun kunne tale om monster trucks, fordi hans far havde taget ham med til et
+                                show nede ved Høng, men det er jo ikke det samme som at være uvenner. Det var bare en
+                                mild form for ligegyldighed, ikke to hænder, der griber fat om ens tarme og vrider dem
+                                som en karklud.<br>
+								<span class="in-word">Jeg</span> røg en cigaret og tænkte: Det her er den sidste, og så gik jeg hjem og røg en mere.
+                                Min mor var ikke hjemme, og lidt senere kom Laura og Malte over for at se Paradise.
+                            </p>
+                            <p>Jeg skrev til Magnus næste dag og tre dage efter og igen, da der var gået en uge, men
+                                han svarede ikke. Jeg badede med Karoline nede i Gershøj hver dag, og da der midt i juli
+                                kom alger, tog vi til Sæbybadet i stedet. Jeg kyssede med en fyr fra Dalby, og så var
+                                ferien slut. Jeg startede på Katten<sup>1</sup> og kom i klasse med en masse langbenede
+                                piger, der
+                                talte lærerne efter munden, sendte skarpe sideblikke og kastede med deres lange hår.
+                                Hvordan overlever man her, når man er to lorte høj, har bølget mellemblondt hår og
+                                kommer fra Skibby? Jeg lavede gruppearbejde med en pige fra Trekroner, der boede i et
+                                rækkehus, hvor alting var sort og hvidt og nyt, og jeg tænkte: Godt at jeg bor så langt
+                                væk, her kommer studentervognen aldrig op, her er der ingen, der vil lave
+                                gruppearbejde.<br>
+								<span class="in-word">Når</span> jeg kom hjem med bussen, så jeg nogle gange Magnus hænge ud foran Netto, og jeg
+                                skrev til ham et par gange i løbet af efteråret, men han ghostede mig.<br>
+								<span class="in-word">Jeg</span> fik 4 i NV<sup>2</sup> og 7 i AP<sup>3</sup>, og i begyndelsen af november ringede
+                                Malte til mig midt om natten.<br>
+								<span class="in-word">-</span> Du skal ringe efter en ambulance. Magnus ligger nede på Selsøvej lige uden for
+                                byskiltet.<br>
+								<span class="in-word">Jeg</span> ringede 112, og de fortalte, at de allerede havde fået et opkald.<br>
+								<span class="in-word">Så</span> spurtede jeg derned.<br>
+								<span class="in-word">Der</span> holdt en firhjulstrækker i vejkanten, og en mand sad på hug ved siden af Magnus og
+                                talte til ham. Crosseren var helt smadret og lå midt på vejen.<br>
+								<span class="in-word">Jeg</span> kunne se, at han genkendte mig, men jeg kunne ikke læse det blik, han sendte. Jeg
+                                tog hans hånd, den var helt indsmurt i blod.<br>
+								<span class="in-word">Manden</span> fortalte om en jolle, han havde liggende nede i Skuldelev Havn. Han fortalte om
+                                hornfisk og multer og en stor havørred, han havde taget lige ud for Eskilsø. Han
+                                fortalte om, hvor rolig man bliver af at sidde i sådan en jolle og vente på bid. En dag
+                                skal vi ud og fiske, sagde han, du må også gerne tage din veninde med.<br>
+								<span class="in-word">Jeg</span> hørte ikke det hele. Jeg lyttede til Magnus’ vejrtrækning, som var svag, men stabil,
+                                og holdt godt fast i de blodige fingre.<br>
+								<span class="in-word">Jeg</span> kom til at tænke på vores første dag i 0. klasse.<br>
+								<span class="in-word">Alle</span> forældrene var der – også Magnus’ mor som var meget yngre end de andre. Hun må være
+                                blevet gravid som 16-årig.<br>
+								<span class="in-word">Magnus</span> var en tynd 6-årig med meget kort lyst hår og stritører, og da Sanne (det hed
+                                vores lærer) havde talt i et minut, rakte han hånden op.<br>
+								<span class="in-word">-</span> Ja, Magnus?<br>
+                                <span class="in-word">-</span> Jeg synes, du snakker for meget.<br>
+								<span class="in-word">Forældrene</span> skraldgrinede, og jeg kiggede på ham og var helt solgt. Jeg tænkte: Han skal
+                                være min ven.<br>
+								<span class="in-word">Vi</span> var det perfekte match, ingen af os kunne koncentrere os om en skid. Vi var slet ikke
+                                klar til at gå i skole.<br>
+								<span class="in-word">Den</span> start forfulgte mig hele vejen, indtil vi fik Sille i 9. klasse.<br>
+                                <span class="in-word">Jeg</span> sagde aldrig noget, men hun kiggede på mig på en bestemt måde, som om hun kendte
+                                mig, som om hun regnede med mig, som om hun måske så sig selv i mig, jeg ved det
+                                ikke.<br>
+								<span class="in-word">Jeg</span> begyndte at forberede mig til hendes timer, og det greb om sig. Pludselig var jeg
+                                erklæret egnet til gymnasiet. Jeg fortalte det selvfølgelig ikke til nogen af de
+                                andre.<br>
+                            </p>
+                            <p>
+                                Vi ventede og ventede dér lige uden for byskiltet, jeg holdt forsigtigt om Magnus’ hånd,
+                                og da ambulancen endelig kom, fik jeg lov at køre med.<br>
+								<span class="in-word">Han</span> blev opereret to gange og lagt i kunstig koma, og jeg sad hos ham i fem dage.<br>
+								<span class="in-word">Hans</span> mor sad der også, hans far kiggede forbi et par gange om dagen, men Malte og de
+                                andre drenge så vi ikke noget til.<br>
+								<span class="in-word">De</span> havde alle sammen ulovlige knallerter, ikke en af dem kørte under 80, det var derfor
+                                de var kørt videre og havde bedt mig om at ringe.<br>
+								<span class="in-word">Magnus</span> skal væk fra de fucking tabere, tænkte jeg.<br>
+                                <span class="in-word">Jeg</span> forestillede mig, hvordan det ville gå i 1.g. på Katten. Hvad ville der ske, hvis
+                                han bad latinlæreren om at tale lidt mindre?<br>
+								<span class="in-word">Det</span> ville være fantastisk.<br>
+								<span class="in-word">Jeg</span> spurgte Magnus’ mor, om hun kunne huske den første dag i 0., og det kunne hun
+                                ikke.<br>
+                                <span class="in-word">Hun</span> smilede, da jeg fortalte historien, og det var den eneste gang, jeg så hende smile i
+                                de fem dage.<br>
+								<span class="in-word">Jeg</span> læste en nyhed, mens jeg sad dér og gloede: Sneen er ved at smelte på Mount Everest,
+                                og ligene af alle de amerikanere og europæere, der er døde på vej til toppen, popper op. Hvad fanden er det for en verden? Har alle bare hovedet oppe i røven på sig selv?<br>
+								<span class="in-word">På</span> fjerdedagen fik jeg en advarsel fra gymnasiet på grund af for meget fravær, og jeg
+                                ringede til Trivsels-Jan.<br>
+								<span class="in-word">-</span> Vi er lidt bekymrede for dit fravær, sagde han.<br>
+								<span class="in-word">-</span> Min ven er kørt galt og ligger i koma.<br>
+								<span class="in-word">-</span> Ja, det lyder jo vældig alvorligt. Men er du sikker på, at det er din opgave? Han
+                                vågner vel ikke hurtigere, fordi du sidder ved siden af?<br>
+								<span class="in-word">-</span> Trivsels-Jan, har du nogen venner?<br>
+								<span class="in-word">-</span> Min bedste ven hedder Georg. Han er lige blevet skilt. Han er faktisk ret ked af
+                                det.<br>
+								<span class="in-word">-</span> Så synes jeg, du skal tage dagen fri og tage hen til ham. Så kan vi snakkes ved, når
+                                jeg er tilbage.<br>
+								<span class="in-word">-</span> Det var måske en god ide? Tak skal du have, Freja.<br>
+								<span class="in-word">Jeg</span> hedder ikke Freja, men fuck nu det.<br>
+								<span class="in-word">Da</span> Magnus endelig vågnede, kiggede han på mig og sagde:<br>
+								<span class="in-word">-</span> Hvad fanden laver du her?<br>
+								<span class="in-word">-</span> Jeg synes, du snakker for meget.<br>
+								<span class="in-word">-</span> Hvad? sagde han.<br>
+								<span class="in-word">Hans</span> mor grinede.<br>
+								<span class="in-word">-</span> Frida fortalte om dengang I startede i 0.<br>
+								<span class="in-word">-</span> Du sagde til Sanne, at hun snakkede for meget.<br>
+								<span class="in-word">Magnus</span> trak på skuldrene.<br>
+								<span class="in-word">-</span> Er det det, du er kommet for at fortælle?<br>
+								<span class="in-word">-</span> Vi skal ud at fiske, sagde jeg, vi har fået en ny ven, der har en jolle. Og så skal du
+                                starte på Katten næste år. Der er en prøve, du kan tage. Det bliver fedt. Vi kan følges
+                                i bussen.<br>
+								<span class="in-word">-</span> Hold nu kæft, sagde han.<br>
+								<span class="in-word">-</span> Nemlig, sagde jeg.<br>
+								<span class="in-word">-</span> <i>Du</i> taler for meget.<br>
+								<span class="in-word">-</span> Jeg er bare glad for at se dig igen.
+                            </p>
+                            <p class="pt-1" style="line-height: 1.6rem; font-size: 14px;">
+                                <sup>1</sup> Katten: Byens katedralskole / gymnasium<br>
+                                <sup>2</sup> NV: Naturvidenskabeligt grundforløb<br>
+                                <sup>3</sup> AP: Almen Sprogforståelse
+
+                            </p>
+                        </div>
+                        <p class="align-right mb-3">(2024)</p><br>
+                        <div class="blue-box">
+                            Der er kun ét rigtigt svar til hver opgave. Sæt kun ét kryds ved hver opgave.
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>1. Hvilken type fortæller er der i teksten?</b></p>
+							<p>
+                                <input type="checkbox" id="da_1_1_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_1_1">En 3.personsfortæller </label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_1_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_1_2">En alvidende fortæller</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_1_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_1_3">En jegfortæller</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_1_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_1_4">En objektiv fortæller</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>2. Hvad er relationen mellem Magnus og fortælleren?</b></p>
+                            <p>
+                                <input type="checkbox" id="da_1_2_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_2_1">De er bekendte</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_2_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_2_2">De er kærester</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_2_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_2_3">De er søskende</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_2_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_2_4">De er venner</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>3. Hvor gamle er de?</b></p>
+                            <p>
+                                <input type="checkbox" id="da_1_3_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_3_1">De er 5-7 år
+                                </label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_3_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_3_2">De er 11-13 år</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_3_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_3_3">De er 15-17 år</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_3_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_3_4">De er 20-22 år</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>4. Hvor længe har fortælleren og Magnus kendt hinanden?</b></p>
+                            <p>
+                                <input type="checkbox" id="da_1_4_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_4_1">Siden 0.klasse</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_4_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_4_2">Siden 5.klasse</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_4_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_4_3">Siden de begyndte på ”Katten”</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_4_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_4_4">Siden de blev født</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>5. Hvordan har fortælleren det med, at Magnus kører væk og efterfølgende ikke svarer
+                                    hende?</b></p>
+                            <p>
+                                <input type="checkbox" id="da_1_5_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_5_1">Hun er ked af det</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_5_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_5_2">Hun er lettet</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_5_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_5_3">Hun er ligeglad</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_5_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_5_4">Hun er vred</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>6. Hvad er det, der ændrer sig for fortælleren i 9.klasse?</b></p>
+                            <p>
+                                <input type="checkbox" id="da_1_6_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_6_1">Hendes forhold til fiskeri</label>
+                            </p>
+
+                            <p>
+                                <input type="checkbox" id="da_1_6_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_6_2">Hendes forhold til forældrene</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_6_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_6_3">Hendes forhold til knallerter</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_6_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_6_4">Hendes forhold til skolen</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>7. Hvorfor vil fortælleren ikke fortælle sine klassekammerater, at hun er erklæret
+                                    egnet til gymnasiet?</b>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_7_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_7_1">Fordi de ved det allerede</label>
+                            </p>
+
+                            <p>
+                                <input type="checkbox" id="da_1_7_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_7_2">Fordi hun har lovet Magnus ikke at sige det</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_7_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_7_3">Fordi skolen bliver prioriteret højt i miljøet</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_7_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_7_4">Fordi skolen ikke bliver anset som vigtig i
+                                    miljøet</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>8. Hvorfor bryder Magnus med fortælleren?</b></p>
+                            <p>
+                                <input type="checkbox" id="da_1_8_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_8_1">Fordi fortælleren er blevet venner med Malte</label>
+                            </p>
+
+                            <p>
+                                <input type="checkbox" id="da_1_8_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_8_2">Fordi fortælleren ikke gider at køre knallert</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_8_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_8_3">Fordi Magnus føler, at hans mor bedre kan lide hende end
+                                    ham</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_8_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_8_4">Fordi Magnus føler sig svigtet af hende, da hun vælger at
+                                    gå i gymnasiet</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>9. Hvad kan man forstå af telefonsamtalen mellem Trivsels-Jan og fortælleren?</b></p>
+                            <p>
+                                <input type="checkbox" id="da_1_9_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_9_1">At børn og unge skal gøre, som de voksne siger</label>
+                            </p>
+
+                            <p>
+                                <input type="checkbox" id="da_1_9_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_9_2">At fraværsprocent er vigtigere end venskab</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_9_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_9_3">At venskab kan være vigtigere end
+                                    fraværsprocent</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_9_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_9_4">At voksne altid er klogere end børn og unge</label>
+                            </p>
+                        </div>
+
+                        <div class="assignment__description-subtask-wrapper mb-3 print-mb-1">
+                            <p><b>10. Temaet kan bedst beskrives med ordene </b></p>
+                            <p>
+                                <input type="checkbox" id="da_1_10_1" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_10_1">at være grænsesøgende</label>
+                            </p>
+
+                            <p>
+                                <input type="checkbox" id="da_1_10_2" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_10_2">at være mønsterbryder</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_10_3" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_10_3">overgangen fra barn til voksen</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="da_1_10_4" data-item="" val="x"><span class="hidden">x</span>
+                                <label class="pl-1" for="da_1_10_4">svære familierelationer</label>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="dansk-2" class="page page__child">
+                    <h2>Læsefærdighed - Tekst 2</h2>
+                    <div class="print-hide">
+                        <p>Til teksten er udarbejdet 10 opgaver. Der er kun ét rigtigt svar til hver opgave.<br>
+                            For at opnå 12 point i den samlede læsefærdighedsprøve (tekst 1 og 2) skal mindst 18 af de
+                            i alt 20 opgaver i prøven være korrekt besvaret.
+                        </p>
+                        <div class="blue-box">
+                            Læs artiklen <i>”Telefonskræk: Jeg vil hellere have en nål gennem næsen end at ringe til en
+                                piercer”</i>,
+                            og sæt streg under det ord eller udtryk i parenteserne, som passer bedst i sammenhængen. Se
+                            hvordan i eksemplet.
+                        </div>
+
+                        <p><b>”Telefonskræk: Jeg vil hellere have en nål gennem næsen end at ringe til en piercer”
+                            </b><br>
+                        <p><i>Af Kathrine Bækgaard Gade</i></p>
+                        </p>
+
+                    </div>
+                    <div class="print-avoid-break">
+                        <div class="line-height-2 print-hide__text p-space">
+                            <p>
+                                Det tager minimum fem minutter og to meget (<u>dybe</u>, hårde, rolige, store)
+                                indåndinger, før jeg kan ringe og bestille stegte risnudler med tofu og grøntsager fra
+                                Nørreports Grill. For jeg lider lidt af telefonskræk.
+                            </p>
+                            <p>
+                                City Piercing har ikke online-booking. Og det gør mig (<span id="da_2_1"
+                                    class="underline-words" data-result="2.1">bange, glad, lykkelig, vred</span>).</p>
+                            <p>
+                                Da jeg for nylig stod med hjertebanken og skulle ringe til City Piercing, gik det op for
+                                mig, hvor stor min frygt for telefonopkald egentlig er. Selvom jeg naturligvis ikke var
+                                upåvirket af tanken om at lade en fremmed skamfere min næse, var den sværeste del af
+                                processen at trykke på det grønne ‘ring-op-ikon’.
+                            </p>
+                            <p>
+                                Som med så mange andre ting, man kan være bange for edderkopper, tandlæger eller dates
+                                med mænd, der kun ejer en enkelt juniordyne, er
+                                (<span id="da_2_2" class="underline-words" data-result="2.2">frygtfølelsen,
+                                    lykkefølelsen, skyldfølelsen, træthedsfølelsen</span>) ikke altid helt logisk
+                                funderet. Men den er ægte.
+                            </p>
+                            <p>
+                                Når jeg bestiller takeaway, bruger jeg Wolt, jeg booker altid frisørtiden online, og når
+                                jeg en sjælden gang har brug for at kontakte lægen, tyr jeg næsten altid til
+                                e-konsultationen – så undgår jeg nemlig fuldstændig telefonens oprindelige funktion:
+                                Opkaldet.
+                            </p>
+                            <p>
+                                Da jeg i sommer opdagede, at jeg havde (<span id="da_2_3" class="underline-words"
+                                    data-result="2.3">fået, mistet, sendt, stjålet</span>) mit pas dagen inden, jeg
+                                skulle til flyve til Italien, var en af de største udfordringer, at jeg skulle ringe til
+                                borgerservice i Nordvest for at bestille en akuttid.</p>
+                            <p>
+                                Men så er det jo (<span id="da_2_4" class="underline-words" data-result="2.4">heldigt,
+                                    sjovt, uheldigt, vigtigt</span>), at det er nemt at forberede sig på de opkald, man
+                                er nødt til selv at foretage. Også selvom jeg er pinligt bevidst om, hvor underligt det
+                                er at sidde med sin telefon i den ene hånd og en stickynote, hvor der står ‘hej, du
+                                snakker med Kathrine Gade’ i den anden.</p>
+
+                            <p>
+                                Men alle fornuftige tanker har det med at forsvinde fra min hjerne, så snart jeg fører
+                                telefonen op til (<span id="da_2_5" class="underline-words" data-result="2.5">hovedet, håret, panden, øret</span>).
+                                Måske er det derfor, jeg altid får andre til at ringe for mig, hvis det er muligt.
+                            </p>
+                            <p>
+                                I modsætning til at få lavet en piercing gør det ikke fysisk ondt at ringe til et andet
+                                menneske. Det er jeg udmærket klar over. Men det kan føles som en fuldstændig (<span
+                                    id="da_2_6" class="underline-words" data-result="2.6">indlysende, nem,
+                                    uoverkommelig, uskyldig</span>) opgave, som jeg altid udskyder så længe som muligt.
+                            </p>
+                            <p>
+                                Og hvis et ukendt nummer toner frem på skærmen, opstår der ikke den mindste snert af
+                                nysgerrighed. Jeg bliver bare nervøs og undgår ofte at besvare opkaldet.
+                            </p>
+                            <p>Hvad er der galt med mig?</p>
+                            <p>
+                                Det er min oplevelse, at det lidt er en generationsting. Selvom jeg er 22 år og havde en
+                                fastnetversion af udyret derhjemme, er jeg rimelig utrænet ud i telefonsamtalens
+                                discipliner. Og foretrækker (<span id="da_2_7" class="underline-words"
+                                    data-result="2.7">aldrig, oftest, pludseligt, sjældent</span>) at kommunikere over
+                                besked.
+                                En svensk undersøgelse fra analyseinstitut Kantar Sifo viser, at 48 procent af dem
+                                mellem 18-29 år er nervøse for at tale i telefon. Og at telefonskrækken aftager, når
+                                alderen stiger.
+                            </p>
+                            <p>
+                                Min kollega fortalte mig for nyligt, at det er en del af et menneskes dannelsesproces at
+                                lære at tale med fremmede mennesker. Jeg kan godt se pointen, men for mig handler det
+                                mere om selve opkaldet end personen på den anden side af røret. Også selvom jeg godt kan
+                                være lidt genert i mødet med andre.
+                            </p>
+                            <p>
+                                For selve telefonsituationen føles lidt som en (<span id="da_2_8"
+                                    class="underline-words" data-result="2.8">begivenhed, eksamen, ferie,
+                                    hyggestund</span>),
+                                jeg er dømt til at dumpe. En eksamen med bind for øjnene vel at mærke, hvor det er
+                                komplet umuligt at se, hvordan folk reagerer på det, jeg siger. Det er en følelse af
+                                akut at skulle præstere. Også selvom jeg bare skal ringe og bestille en nummer 13 hos
+                                den lokale grillbar. Det er i sandhed en irrationel frygt – og en følelse af
+                                inkompetence, jeg meget gerne snart vil (<span id="da_2_9" class="underline-words"
+                                    data-result="2.9">af med, ind i, over på, uden for</span>). For det er en ganske
+                                irriterende måde at gå gennem livet på.
+                            </p>
+                            <p>
+                                Jeg har hørt, at eksponeringsterapi skulle være løsningen. Og med det in mente burde jeg
+                                måske skaffe mig et midlertidigt job som telefonsælger. Men i skrivende stund er det
+                                altså helt fint blot at være en journalistagtig type, som sporadisk skal ringe rundt til
+                                kilder.
+                            </p>
+                            <p>
+                                Ellers kommer mit nervesystem i hvert fald betydeligt mere på overarbejde, end det
+                                allerede er.
+                            </p>
+                            <p>
+                                Og så må jeg hellere skynde mig at (<span id="da_2_10" class="underline-words"
+                                    data-result="2.10">hviske, mumle, råbe, sige</span>), at jeg selvfølgelig godt
+                                kan tale i telefon med mine venner og forældre – selvom vores samtaler også handler om
+                                praktik og hvad kodeordet til Disney+ mon er, når FCM skal spille Europa League.
+                            </p>
+                            <p>
+                                Men ellers er min telefon konstant på ‘forstyr ikke’.
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+			 		<p class="align-right mb-3 print-hide">(Heartbeats.dk, september 2024)</p>
+                </div>
+
+                <div id="dansk-3" class="page page__child">
+                    <h2>Grammatisk færdighed</h2>
+                    <div class="print-hide">
+                        <p>Du skal følge anvisningen og besvare opgaven. Du kan højst få 6 point for din besvarelse.
+                        </p>
+                        <div class="blue-box">
+                            Omskriv nedenstående uddrag fra novellen <i>Jeg hedder ikke Freja</i>
+                            fra datid til nutid. Understreg de udsagnsord (verber) i boksen, du omskriver fra datid til
+                            nutid. Se hvordan i eksemplet.
+                        </div>
+                        <p>Originaltekst:</p>
+                        <p>
+                            Jeg skrev til Magnus næste dag og tre dage efter og igen, da der var gået en uge, men han
+                            svarede ikke. Jeg badede med Karoline nede i Gershøj hver dag, og da der midt i juli kom
+                            alger, tog vi til Sæbybadet i stedet. Jeg kyssede med en fyr fra Dalby, og så var ferien
+                            slut. Jeg startede på Katten og kom i klasse med en masse langbenede piger, der talte
+                            lærerne efter munden, sendte skarpe sideblikke og kastede med deres lange hår.
+                        </p>
+                        <p><br>Skriv din redigerede version i boksen. Husk at understrege de ændrede udsagnsord som i
+                            eksemplet. Du understreger ordet ved at markere det og dernæst trykke <u>'U'</u>.</p>
+                    </div>
+                    <span class="" data-result="3" data-group="Dansk">
+                        <div id="da_opg3" data-item data-rich style="height:150px;" data-rich-toolbar="underline">
+                            Jeg <u>skriver</u> til Magnus næste dag og tre dage efter og igen, da der var gået en uge,
+                            men han svarede ikke. Jeg badede med Karoline nede i Gershøj hver dag, og da der midt i juli
+                            kom alger, tog vi til Sæbybadet i stedet. Jeg kyssede med en fyr fra Dalby, og så var ferien
+                            slut. Jeg startede på Katten og kom i klasse med en masse langbenede piger, der talte
+                            lærerne efter munden, sendte skarpe sideblikke og kastede med deres lange hår.
+                        </div>
+                    </span>
+                </div>
+
+                <div id="dansk-4" class="page page__child">
+                    <h2>Skriftlig færdighed</h2>
+                    <div class="print-hide">
+                        <p>Du skal følge anvisningerne i boksen nedenfor og besvare opgaven. Din besvarelse bliver
+                            vurderet ud fra følgende kriterier:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>sammenhæng</p>
+                            </li>
+                            <li>
+                                <p>grammatik</p>
+                            </li>
+                            <li>
+                                <p>retskrivning</p>
+                            </li>
+                            <li>
+                                <p>tegnsætning</p>
+                            </li>
+                        </ul>
+
+                        <p>Du kan højst få 7 point for din besvarelse.</p>
+                        <div class="blue-box">
+                            <p>Med udgangspunkt i novellen <i>Jeg hedder ikke Freja</i> skal du forestille dig, at du er
+                                Magnus, som skriver, hvad han tænker, da han forlader Frida på knallerten. Du skal
+                                skrive ca. 200 ord.</p>
+                        </div>
+                    </div>
+                    <div class="ck-editor-costum" data-result="4" data-group="Dansk">
+                        <p class="print-ml-2">Skriv din besvarelse i boksen herunder.</p>
+                        <div id="4" data-item data-rich data-remove-html="" data-word-count></div>
+                    </div>
+                </div>
+
+                <div id="engelsk" class="page page__parent">
+                    <h1>Engelsk</h1>
+                    <div class="print-hide">
+                        <p>Prøven i engelsk består af fem delprøver: fire prøver i sprog og grammatik og en prøve i
+                            skriftlig fremstilling.</p>
+
+                        <div class="assignment__description-line">
+                            <table class="table w-100">
+                                <tr>
+                                    <th class="align-left w-50">Opgave</th>
+                                    <th class="align-left w-50">Antal mulige point</th>
+                                </tr>
+                                <tr class="align-left">
+                                    <th>Section 1</th>
+                                    <th>4 point
+                                    </th>
+                                </tr>
+                                <tr class="align-left">
+                                    <th>Section 2</th>
+                                    <th>4 point</th>
+                                </tr>
+                                <tr class="align-left">
+                                    <th>Section 3</th>
+                                    <th>4 point</th>
+                                </tr>
+                                <tr class="align-left">
+                                    <th>Section 4</th>
+                                    <th>6 point</th>
+                                </tr>
+                                <tr class="align-left">
+                                    <th>Section 5</th>
+                                    <th>7 point</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="engelsk-1" class="page page__child">
+                    <h2>Section 1</h2>
+                    <div class="blue-box">
+                        <p>Choose the right word.</p>
+                        <p>There are more words than you will need. No word may be used more than once. </p>
+                        <p>There is an example in the first sentence.</p>
+                    </div>
+                    <div class="word-list" data-handle="e_wordlist_1">
+                        <ul>
+                            <li>favour</li>
+                            <li class="skip"> - </li>
+                            <li>favours</li>
+                            <li class="skip"> - </li>
+                            <li>favoured</li>
+                            <li class="skip"> - </li>
+                            <li>favourite</li>
+                            <li class="skip"> - </li>
+                            <li>favourites</li>
+                            <li class="skip"> - </li>
+                            <li>favourable</li>
+                            <li class="skip"> - </li>
+                            <li><s>favourably</s></li>
+                        </ul>
+                    </div>
+                    <div class="assignment__description-subtask--small">
+                        <span class="subtask-indicator">1.0</span>
+                        <div class="assignment__description-subtask-wrapper">
+                            <div class="assignment__description-line">
+                                <p class="m-0">American reviewers have compared the new horror writer <input type="text"
+                                        id="eng_1_0" class="inline-text inline-input" data-wordlist="e_wordlist_1"
+                                        value="favourably" readonly="" style="width: 78px; margin-right: 0;"> with
+                                    Stephen King.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment__description-subtask--small">
+                        <span class="subtask-indicator">1.1</span>
+                        <div class="assignment__description-subtask-wrapper">
+                            <div class="assignment__description-line">
+                                <p class="m-0">Yesterday’s wet conditions <input type="text" id="eng_1_1" data-item
+                                        class="inline-text inline-input" data-wordlist="e_wordlist_1"
+                                        style="width: 78px;">the home team, so they won.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment__description-subtask--small">
+                        <span class="subtask-indicator">1.2</span>
+                        <div class="assignment__description-subtask-wrapper">
+                            <div class="assignment__description-line">
+                                <p class="m-0">To my great regret, my brother has always been my mother’s
+                                    <input type="text" id="eng_1_2" data-item class="inline-text inline-input"
+                                        data-wordlist="e_wordlist_1" style="width: 78px;">.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment__description-subtask--small">
+                        <span class="subtask-indicator">1.3</span>
+                        <div class="assignment__description-subtask-wrapper">
+                            <div class="assignment__description-line">
+                                <p class="m-0">“I’m afraid the proposed tax cuts will <input type="text" id="eng_1_3"
+                                        data-item class="inline-text inline-input" data-wordlist="e_wordlist_1"
+                                        style="width: 78px;">the rich,” he said. “And that is not what the government
+                                    wants.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment__description-subtask--small">
+                        <span class="subtask-indicator">1.4</span>
+                        <div class="assignment__description-subtask-wrapper">
+                            <div class="assignment__description-line">
+                                <p class="m-0">They decided to postpone the match until the conditions were more <input
+                                        type="text" id="eng_1_4" data-item class="inline-text inline-input"
+                                        data-wordlist="e_wordlist_1" style="width: 78px;">.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="engelsk-2" class="page page__child">
+                    <h2>Section 2</h2>
+                    <div class="blue-box">
+                        <p>Read the text below.</p>
+                        <p>Use the word in brackets and write the correct form of the word as shown in the two examples.
+                        </p>
+                    </div>
+
+                    <div class="asignment__description-line line-height-4">
+                        I (wander)
+                        <div class="input-answer"><input type="text" id="eng_2_0" class="inline-text" data-item=""
+                                value="wandered" readonly=""><span class="input-answer-sub">2.0</span></div> down the
+                        garden towards the swimming pool. It was a fine garden and there were plenty of
+                        (chair) <div class="input-answer"><input type="text" id="eng_opg_2_0" class="inline-text"
+                                data-item="" value="chairs" readonly=""><span class="input-answer-sub">2.0.0</span>
+                        </div>
+                        around the pool. There were white tables and huge (bright) <div class="input-answer"><input
+                                type="text" id="eng_2_1" class="inline-text" data-item=""><span
+                                class="input-answer-sub">2.1</span>
+                        </div> coloured umbrellas and sunburned guests sitting around in bathing suits. In the pool
+                        itself there were three or four young (man)
+                        <div class="input-answer"><input type="text" id="eng_2_2" class="inline-text" data-item=""><span
+                                class="input-answer-sub">2.2</span></div>
+                        all splashing about and making a lot of noise and throwing a large rubber ball at one
+                        another.<br>
+                        &nbsp; &nbsp; &nbsp; I stood watching them. They sounded American, and I thought they were
+                        probably
+                        young sailors
+                        from (a)
+                        <div class="input-answer"><input type="text" id="eng_2_3" class="inline-text" data-item=""><span
+                                class="input-answer-sub">2.3</span></div>
+                        American ship, which had arrived in harbour that morning. Just then I noticed someone standing
+                        by the pool dressed in a white suit and a cream-coloured hat. The man was the (small)
+                        <div class="input-answer">
+                            <input type="text" id="eng_2_4" class="inline-text" data-item=""><span
+                                class="input-answer-sub">2.4</span>
+                        </div> person that I had ever seen.
+                    </div>
+                </div>
+
+                <div id="engelsk-3" class="page page__child">
+                    <h2>Section 3</h2>
+                    <div class="blue-box">Read the text below and choose THE WORD THAT FITS in the text. There is an
+                        example at the beginning.</div>
+
+                    <div class="print-avoid-break">
+                        <div class="line-height-3 print-hide__text">
+                            <b>The Tube
+                            </b><br>
+                            The London Underground is a <b>3.0</b>
+                            (structure <u>system</u>, method, technique) of electric trains in London, UK. It started
+                            running in 1863 as the Metropolitan Railway, thereby making it the
+
+                            <span>
+                                <b>3.1</b> (<span id="eng_3_1" class="underline-words" data-result="3.1"
+                                    data-group="Engelsk">longest,
+                                    oldest,
+                                    deepest, fastest</span>)
+                            </span>
+                            underground railway in the world. After the opening, the system was
+                            <span><b>3.2</b>
+                                (<span id="eng_3_2" class="underline-words" data-result="3.2"
+                                    data-group="Engelsk">stolen, cloned, re-built, copied</span>)</span>
+                            in many other cities, for example New York and Madrid. Even though it is called <i>the
+                                Underground</i>, about half of it runs on the surface. The "Tube" is a slang name for
+                            the London Underground because the
+
+                            <span><b>3.3</b>
+                                (<span id="eng_3_3" class="underline-words" data-result="3.3"
+                                    data-group="Engelsk">holes, mines, tunnels, passages</span>)
+                            </span>
+                            for some of the lines are round tubes running through the ground. Today, trains stop at two
+                            hundred and seventy
+                            <span><b>3.4</b>
+                                (<span id="eng_3_4" class="underline-words" data-result="3.4"
+                                    data-group="Engelsk">stations,
+                                    levels, camps, bases</span>) and travel on more than 400 kilometers of track.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="engelsk-4" class="page page__child print-avoid-break">
+                    <h2>Section 4</h2>
+                    <div class="blue-box">
+                        <p>Find and replace the six mistakes with the correct words.</p>
+                        <p>There is an example in the first sentence.</p>
+                    </div>
+
+                    <div id="eng_4_v1" class="find-replace-words line-height-3" data-group="Engelsk">
+                        The 2024 Summer Olympics took place in France, and most of the events was%%were
+                        held in Paris. The handball finals, however, took place in Lille, a town 225 km from Paris, and
+                        the sailing and some of the football games in the city of marseille in southern France. The
+                        surfing events were held on a island in French Polynesia.
+                    </div>
+
+                    <div id="eng_4_v2" class="find-replace-words line-height-3" data-group="Engelsk">            
+                        Over 11,000 athletes participated, and the two country with the most athletes were the US with
+                        592, and France with 573. Denmark sent 124 competitors.
+                    </div>
+
+                    <div id="eng_4_v3" class="find-replace-words line-height-3">
+                        For the first time, the opening ceremony was not held at a stadium. Instead, all the athletes
+                        were presented in a boat parade along the Seine River that run through Paris.
+                    </div>
+
+                    <div id="eng_4_v4" class="find-replace-words line-height-3" data-group="Engelsk">
+                        The closing ceremony, on the other hand, took place at Stade de France, and here more than a
+                        hundred acrobats, dancers and circus artists perform. Even the “Mission Impossible” actor Tom
+                        Cruise was their to help close the show and pass on the Olympic flag to Los Angeles, which is to
+                        host the 2028 Summer Games.
+                    </div>
+                </div>
+
+                <div id="engelsk-5" class="page page__child" data-id="14" data-parentid="9" data-layout="0"
+                    data-menutekst="Section 5">
+                    <h2>Section 5</h2>
+                    <div class="assignment__illustration m-0 p-0 print-hide">
+                        <img src="images/Engelsk/eng_section_5.jpg" class="w-100">
+                    </div>
+                    <div class="blue-box">
+                        Imagine you are enjoying a day at this amusement park in Alton Towers, UK. Write a text (120-150
+                        words) describing the situation in the picture. Include all of the words from the list below in
+                        any order you choose. You are not allowed to change the form of the words.
+                    </div>
+                    <div class="word-list" data-handle="eng_wordlist_2" data-wordlist-type="any">
+                        <ul>
+                            <li>speed</li>
+                            <li class="skip"> - </li>
+                            <li>only</li>
+                            <li class="skip"> - </li>
+                            <li>hang</li>
+                            <li class="skip"> - </li>
+                            <li>inverted</li>
+                            <li class="skip"> - </li>
+                            <li>thrill</li>
+                            <li class="skip">&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div class="textarea print-ml-2" data-group="Engelsk">
+                        <textarea id="eng_5" class="text-field" data-item="" data-wordlist="eng_wordlist_2"
+                            data-style="white-space:pre-wrap; border: 1px solid #c4c4c4; padding: 1rem"
+                            data-remove-html="" data-word-count></textarea><span class="hidden textarea"
+                            data-remove-html="">
+                        </span>
+                    </div>
+                </div>
+
+                <div id="matematik" class="page page__parent">
+                    <div class="print-hide">
+                        <h1>Matematik</h1>
+                        <p>Optagelsesprøven i matematik består af 19 opgaver med i alt 25 delopgaver. I hver delopgave
+                            kan du
+                            opnå 1 point. Samlet set kan du altså højst opnå 25 point i matematik.</p>
+                        <p>Du må bruge alle hjælpemidler, herunder bøger, noter, computer og lommeregner.</p>
+
+                        <ul>
+                            <li>Du kan skrive en brøkstreg ved at bruge dette tegn: / <span>&nbsp; &nbsp; &nbsp;
+                                    &nbsp;Eksempel:
+                                    1/3</span>
+                            </li>
+                            <li>Du kan skrive et gangetegn ved at bruge dette tegn: * <span>&nbsp; &nbsp; &nbsp;
+                                    Eksempel: 2*6</span>
+                            </li>
+                            <li>Du kan skrive en potens ved at bruge dette tegn: ^ <span>&nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp;
+                                    &nbsp;Eksempel:
+                                    4^2</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="matematik-1" class="page page__child">
+                    <h1 class="print-assignment-title">Matematik</h1>
+                    <h2>Opgaver</h2>
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 1</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <p>Skriv det tal, der består af 3 tusinder og 5 tiere.</p>
+                                <div class="display-flex">
+                                    <span class="static-equation"></span>
+                                    <div><input type="text" id="mat_opg1" class="inline-text input-math"
+                                            data-class="input-math" data-item autocomplete="off" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 2</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <p>Beregn tallet.</p>
+                                <div class="display-flex">
+                                    <span class="static-equation">10-2\cdot 3 = </span>
+                                    <div><input type="text" id="mat_opg2" class="inline-text input-math"
+                                            data-class="input-math" data-item autocomplete="off" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 3</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <p>Skriv en brøk, der har større værdi end
+                                    <span class="static-equation">\frac{1}{2}</span> men mindre værdi end 1.
+                                </p>
+                                <div><input type="text" id="mat_opg3" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 4</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <p>4 børn skal dele 200 kr. ligeligt.<br>
+                                    Hvor mange penge får de hver?
+                                </p>
+                            </div>
+                            <div class="assignment__description-line">
+                                <input type="text" id="mat_opg4" class="inline-text input-math" data-class="input-math"
+                                    data-item autocomplete="off" />
+                                kr.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 5</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <p>Løs ligningen. <br> <span class="static-equation">12 = 15 - x</span></p>
+                                <div class="display-flex">
+                                    <span class="static-equation">x = </span>
+                                    <div><input type="text" id="mat_opg5" class="inline-text input-math"
+                                            data-class="input-math" data-item autocomplete="off" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 6</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line print-hide">
+                                <div class="w-80 align-right mb-2">
+                                    <img src="images/Matematik/proeve_1_opgave_06.png" alt="Praliné">
+                                    <span class="assignment__illustration-text">Tegning: Hans Ole Herbst&nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                <p>
+                                    I hver af de to sorte rammer er der nogle æsker og nogle løse stykker chokolade.
+                                    Alle æskerne indeholder det samme antal stykker chokolade. Der er lige mange stykker
+                                    chokolade i hver af de to sorte rammer.
+                                </p>
+                            </div>
+                            <div class="assignment__description-line">
+                                <p>Hvor mange stykker chokolade er der i hver æske?
+                                </p>
+                            </div>
+                            <div class="assignment__description-line">
+                                <div class="display-flex">
+                                    <p><input type="text" id="mat_opg6" class="inline-text input-math"
+                                            data-class="input-math" data-item autocomplete="off" />
+                                        stykker chokolade.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 7</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <p>Hvilket tal er størst? (sæt X)</p>
+                            </div>
+                            <div class="assignment__description-line">
+                                <table class="no-border w-100 checkbox-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_7_1" data-item=""
+                                                    val="x"><label for="m_7_1"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_7_2" data-item=""
+                                                    val="x"><label for="m_7_2"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_7_3" data-item=""
+                                                    val="x"><label for="m_7_3"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_7_4" data-item=""
+                                                    val="x"><label for="m_7_4"></label>
+                                            </td>
+                                            <td class="align-center no-border  w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_7_5" data-item=""
+                                                    val="x"><label for="m_7_5"></label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="no-border w-100">
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">1,08</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">1,31</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">1,29</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">1,068</span></p>
+                                            </td>
+                                            <td class="align-center no-border  w-20">
+                                                <p><span class="static-equation">1,102</span></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 8</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                Hvor mange procent er 10 ud af 250?
+                            </div>
+                            <div class="assignment__description-line">
+                                <div class="assignment__description-line">
+                                    <input type="text" id="mat_opg8" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" /> %
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 9</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                En skjorte kostede før 350 kr. På udsalg er der rabat på 30 %.<br>
+                                Hvad koster skjorten på udsalg?
+
+
+                            </div>
+                            <div class="assignment__description-line">
+                                <input type="text" id="mat_opg9" class="inline-text input-math" data-class="input-math"
+                                    data-item autocomplete="off" /> kr.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment pb-0 print-hide">
+                        <h3><span class="print-hide">Opgave</span> 10</h3>
+                        <div class="assignment__description side-by-side">
+                            <div class="assignment__description-line">
+                                <img class="w-100" src="images/Matematik/proeve_1_opgave_10.png" alt="Hvede Mel, SUKKER, MÆLK, Vaniljesukker">
+								<span class="assignment__illustration-text">Tegning: Hans Ole Herbst</span>
+                            </div>
+                            <div class="assignment__description-line">
+                                <div class="blue-box pt-1 pl-1 pr-1 pb-1">
+                                    Opskrift: Pandekager til 4 personer<br>
+                                    150 g hvedemel<br>
+                                    3 dL mælk<br>
+                                    4 æg<br>
+                                    1 teskefulde vaniljesukker<br>
+                                    2 teskefulde sukker<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment no-border pt-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">10.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hugo vil lave pandekager til 12 personer.<br>
+                                    Hvor mange æg skal Hugo bruge?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <input type="text" id="mat_opg10-1" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" />
+                                    æg.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment no-border pt-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">10.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Vilma vil lave pandekager til 6 personer.<br>
+                                    Hvor mange deciliter mælk skal Vilma bruge?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <input type="text" id="mat_opg10-2" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" />
+                                    dL.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 11</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <p>Hvilket af følgende udtryk er en rigtig omskrivning af &nbsp;<span
+                                        class="static-equation">2 \cdot (n - 2)</span>?</p>
+                                <p>Sæt X</p>
+                            </div>
+                            <div class="assignment__description-line">
+                                <table class="no-border w-100 checkbox-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_11_1" data-item=""
+                                                    val="x"><label for="m_11_1"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_11_2" data-item=""
+                                                    val="x"><label for="m_11_2"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_11_3" data-item=""
+                                                    val="x"><label for="m_11_3"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_11_4" data-item=""
+                                                    val="x"><label for="m_11_4"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_11_5" data-item=""
+                                                    val="x"><label for="m_11_5"></label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="no-border w-100">
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">2n + 4</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">2n - 2</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">2 + n - 2</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">2n - 4</span></p>
+                                            </td>
+                                            <td class="align-center no-border  w-20">
+                                                <p><span class="static-equation">n - 4</span></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 12</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line print-hide">
+                                <img class="w-60" src="images/Matematik/proeve_1_opgave_12.jpg"><br>
+                                
+                            </div>
+                            <div class="assignment__description-line">
+                                <p>Figuren viser grafen for en linje <i>l.</i>
+                                </p>
+                                <p>Hvad er ligningen for linjen?</p>
+                                <p>Sæt X</p>
+                            </div>
+                            <div class="assignment__description-line">
+                                <table class="no-border w-100 checkbox-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_12_1" data-item=""
+                                                    val="x"><label for="m_12_1"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_12_2" data-item=""
+                                                    val="x"><label for="m_12_2"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_12_3" data-item=""
+                                                    val="x"><label for="m_12_3"></label>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_12_4" data-item=""
+                                                    val="x"><label for="m_12_4"></label>
+                                            </td>
+                                            <td class="align-center no-border  w-20">
+                                                <input type="checkbox" class="single-checkbox" id="m_12_5" data-item=""
+                                                    val="x"><label for="m_12_5"></label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="no-border w-100">
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">y = 2x + 2</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">y = 0</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">y = 1</span></p>
+                                            </td>
+                                            <td class="align-center no-border w-20">
+                                                <p><span class="static-equation">y = x + 1</span></p>
+                                            </td>
+                                            <td class="align-center no-border  w-20">
+                                                <p><span class="static-equation">y = x</span></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 13</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                Omskriv.<br>
+                            </div>
+                            <div class="assignment__description-line">
+                                1200 m = <input type="text" id="mat_opg13" class="inline-text input-math"
+                                    data-class="input-math" data-item autocomplete="off" /> km.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment pb-0 print-hide">
+                        <h3><span class="print-hide">Opgave</span> 14</h3>
+                        <div class="assignment__description">
+                            <div class="w-60">
+                                <img src="images/Matematik/proeve_1_opgave_14.jpg" alt="5cm, 2cm">
+                            </div>
+							<p>Skitsen viser et rektangel.</p>
+                        </div>
+                    </div>
+                    <div class="assignment no-border pt-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">14.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvor stort er arealet af rektanglet?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <input type="text" id="mat_opg14-1-1" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" /> cm<sup>2</sup>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment no-border pt-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">14.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvor stor er omkredsen af rektanglet?</p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <input type="text" id="mat_opg14-2-1" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" /> cm.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 15</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <div class="w-70 pb-2 print-hide">
+                                    <img src="images/Matematik/proeve_1_opgave_15.jpg">
+                                </div>
+                                Figuren viser fire rette linjer <i>l, m, n</i> og <i>o</i>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment no-border pt-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">15.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvilken af de rette linjer skærer y-aksen i punktet (0,4)?<br>Sæt X</p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <table class="no-border w-100 checkbox-table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-center no-border w-20">
+                                                    <input type="checkbox" class="single-checkbox" id="m_15_1_1" data-item="" val="x"><label
+                                                        for="m_12_1"></label>
+                                                </td>
+                                                <td class="align-center no-border w-20">
+                                                    <input type="checkbox" class="single-checkbox" id="m_15_1_2" data-item="" val="x"><label
+                                                        for="m_12_2"></label>
+                                                </td>
+                                                <td class="align-center no-border w-20">
+                                                    <input type="checkbox" class="single-checkbox" id="m_15_1_3" data-item="" val="x"><label
+                                                        for="m_12_3"></label>
+                                                </td>
+                                                <td class="align-center no-border w-20">
+                                                    <input type="checkbox" class="single-checkbox" id="m_15_1_4" data-item="" val="x"><label
+                                                        for="m_12_4"></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="no-border w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-center no-border w-20">
+                                                    <p><span class="static-equation">l</span></p>
+                                                </td>
+                                                <td class="align-center no-border w-20">
+                                                    <p><span class="static-equation">m</span></p>
+                                                </td>
+                                                <td class="align-center no-border w-20">
+                                                    <p><span class="static-equation">n</span></p>
+                                                </td>
+                                                <td class="align-center no-border w-20">
+                                                    <p><span class="static-equation">o</span></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment no-border pt-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">15.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    I hvilket punkt skærer linjerne <i>l</i> og <i>n</i> hinanden?
+                                </div>
+                                <div class="assignment__description-line">
+                                    ( <input type="text" id="mat_opg15-2-1" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" /> ,
+                                    <input type="text" id="mat_opg15-2-2" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" /> )
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 16</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <div class="w-60 print-hide pb-2">
+                                    <img src="images/Matematik/proeve_1_opgave_16.jpg" alt="A 30°, B 35°, C">
+                                </div>
+                                <div class="assignment__description-line print-hide">
+                                    Figuren viser en trekant <i>ABC</i>.</div>
+                                <div class="assignment__description-line">
+                                    Hvor stor er vinkel <i>C</i>?
+                                </div>
+                            </div>
+                            <div class="assignment__description-line">
+                                <input type="text" id="mat_opg16" class="inline-text input-math" data-class="input-math"
+                                    data-item autocomplete="off" /> °
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment pb-0 print-hide">
+                        <h3><span class="print-hide">Opgave</span> 17</h3>
+                        <div class="assignment__description">
+                            <img class="w-90" src="images/Matematik/proeve_1_opgave_17.png" alt="Figur nr. 1, Figur nr. 2, Figur nr. 3">
+                        </div>
+                        <div class="assignment__description">
+                            <p>Billedet viser de tre første figurer i en figurfølge. Figurfølgen fortsætter på samme
+                                måde, som den er begyndt.</p>
+                        </div>
+                    </div>
+                    <div class="assignment no-border pt-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">17.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvor mange centicubes er der i figur nr. 4?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <input type="text" id="mat_opg17-1-1" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" /> centicubes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment no-border pt-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">17.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvilken figur indeholder 21 centicubes?</p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    Figur nr. <input type="text" id="mat_opg17-2-1" class="inline-text input-math"
+                                        data-class="input-math" data-item autocomplete="off" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment pb-0 print-hide">
+                        <h3><span class="print-hide">Opgave</span> 18</h3>
+                        <div class="assignment__description">
+                            <div class="assignment__description-line">
+                                <div class="w-70 pb-2">
+                                    <img src="images/Matematik/Proeve_1_opgave_18.png" alt="
+                                    Antal elever:
+                                    25
+                                    20
+                                    15
+                                    10
+                                    5
+                                    0
+
+                                    ugedag:
+                                    mandag
+                                    tirsdag
+                                    onsdag
+                                    torsdag
+                                    fredag">
+                                </div>
+                                Diagrammet viser hvor mange elever i 9.C, der var i skole de forskellige dage i en uge.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment no-border pb-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">18.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvor mange elever var i skole onsdag?</p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <p>
+                                        <span class="equation" data-item="" id="mat_18_1"></span>
+                                        elever.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment no-border pb-0">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">18.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                        <p>
+                                            Hvor stor forskel var der på antal elever de to dage, hvor der var flest og færrest elever? 
+                                        </p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <p>
+                                        <span class="equation" data-item="" id="mat_18_2"></span> elever.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment no-border">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">18.3</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvor mange elever var der i skole i gennemsnit?</p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <p>
+                                        <span class="equation" data-item="" id="mat_18_3"></span> elever.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <h3><span class="print-hide">Opgave</span> 19</h3>
+                        <div class="assignment__description" data-group="Matematik">
+                            <div class="assignment__description-line">
+                                <div class="w-70 mb-1">
+                                    <img src="images/Matematik/proeve_1_opgave_19.png" alt="Kilde vand, citrus" class="print-hide">
+									<span class="assignment__illustration-text print-hide">Tegning: Hans Ole Herbst</span>
+                                </div>
+                                <div class="assignment__description-line pt-1 print-hide">
+                                    <p>
+                                        Pelle laver et eksperiment, hvor han prøver at kaste en flaske, så den drejer
+                                        rundt i luften én gang og lander stående. <br>
+                                        Han kaster 15 gange. Flasken lander stående 3 gange.
+                                    </p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <p>
+                                        Hvor stor er sandsynligheden for, at flasken lander stående, ifølge Pelles
+                                        eksperiment?
+                                    </p>
+                                </div>
+                                <input type="text" id="mat_opg19" class="inline-text input-math" data-class="input-math"
+                                    data-item autocomplete="off" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fysik-kemi" class="page page__parent">
+                    <h1>Fysik/kemi</h1>
+                    <div class="print-hide">
+                        <p>Prøven i fysik/kemi består af 24 opgaver, og du kan opnå 1 eller 2 point i hver enkelt
+                            opgave. De 24 opgaver er fordelt på 5 områder indenfor fysik/kemi. Du kan samlet få op
+                            til
+                            25 point.
+                        </p>
+                        <p>Grundstoffernes periodesystem findes sidst i sættet.</p>
+                    </div>
+                </div>
+
+                <div id="fysik-kemi-1" class="page page__child">
+                    <h2>1. Atomer og grundstoffer</h2>
+                    <div class="assignment">
+                        <div class="assignment__illustration print-hide pt-0">
+                            <img class="" style="width: 300px" src="images/Fysik-Kemi/OPT1_figur_1a.jpg" alt="">
+                            <span class="assignment__illustration-text pt-1">Figur 1.a: En atommodel.
+                            </span>
+                        </div>
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">1.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvilket atomnummer har atomet vist på figur 1.a?
+                                    </p>
+                                </div>
+                                <div class="assignment__description-line">
+
+                                    <div class="checkbox-row">
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_1" data-item="" value="6">
+                                            6</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_2" data-item="" value="8">
+                                            8</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_3" data-item=""
+                                                value="10"> 10</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_4" data-item=""
+                                                value="12"> 12</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_5" data-item=""
+                                                value="14"> 14</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_6" data-item=""
+                                                value="16"> 16</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_7" data-item=""
+                                                value="18"> 18</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_8" data-item=""
+                                                value="20"> 20</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_9" data-item=""
+                                                value="22"> 22</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_1_1_10" data-item=""
+                                                value="24"> 24</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">1.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvad hedder de partikler, der er tegnet blå og har et - i midten. Se figur 1.a?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <span><input type="text" class="inline-text" id="fk_1_2" data-item></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+
+                        <div class="assignment__description print-hide">
+                            <div class="asignment__description-line">
+                                Anvend <a href="files/23958_fys_grundstoffernes_periodesystem.pdf" target="_blank">
+                                    grundstoffernes
+                                    periodesystem</a> til de næste 3 opgaver.
+                            </div>
+                        </div>
+
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">1.3</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvilket atomsymbol har grundstoffet fluor?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <span><input type="text" class="inline-text" id="fk_1_3" data-item></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">1.4</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvilken atomvægt er angivet for fluor i grundstoffernes periodesystem?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <span><input type="text" class="inline-text" id="fk_1_4" data-item></span> u.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">1.5</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Skriv navnet på to grundstoffer, der ligger i samme gruppe (hovedgruppe) som fluor.
+                                </div>
+                                <div class="assignment__description-line">
+                                    <span><input type="text" class="inline-text" id="fk_1_5_1" data-item
+                                            style="width: 215px;"></span><br>
+                                    <span><input type="text" class="inline-text" id="fk_1_5_2" data-item
+                                            style="width: 215px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fysik-kemi-2" class="page page__child">
+                    <h2>2. Isolering af hus</h2>
+                    <div class="assignment">
+                        <div class="assignment__description mt-0 print-hide">
+                            <p> Figur viser et foto af et hus optaget med et termisk kamera. Huset har sne på dele af
+                                taget.
+                            </p>
+                        </div>
+                        <div class="assignment__description-line">
+                            <div class="assignment__illustration p-0 mb-0 print-hide">
+                                <img src="images/Fysik-Kemi/OPT2_figur2a_termisk_foto.png" alt="
+                                A, D, B
+                                7,0
+                                6,5
+                                6,0
+                                5,5
+                                5,0
+                                4,5
+                                Temperaturskala (°C)" class="w-80">
+                                <span class="assignment__illustration-text mt-1 mb-1 align-center">Figur 2.a: Termisk
+                                    foto af et hus.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">2.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvilken temperatur måles på det termiske foto ved døren (D) på figur 2.a?
+                                    </p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <span><input type="text" class="inline-text" id="fk_2_1" data-item></span> °C
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">2.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvilket vindue er bedst isoleret? Anvend figur 2.a.</p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <table class="table w-70">
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-center"></td>
+                                                <td class="align-center" style="width: 75px"><b>Sæt X</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>vindue A</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_2_2_1"
+                                                        data-item="" val="x"><label for="fk_2_2_1"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_2_2_1" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>vindue B</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_2_2_2"
+                                                        data-item="" val="x"><label for="fk_2_2_2"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_2_2_2" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description mt-0 mb-2 print-hide">
+                            <p>Varme er elektromagnetisk IR-stråling.
+                            </p>
+                            <div class="assignment__description-line">
+                                <div class="assignment__illustration pt-0 mt-0 p-0 mb-0">
+                                    <img src="images/Fysik-Kemi/OPT2_figur2a.png" class="w-80" alt="
+                                    Det elektromagnetiske spektrum
+                                    Røntgenstråling
+                                    Synligt lys
+                                    Mikrobølger
+                                    Radiobølger
+                                    10-13 cm
+                                    10-9 cm
+                                    10-6 cm
+                                    10-4 cm
+                                    10-2 cm
+                                    1 cm
+                                    1 km
+                                    Bølgelængde
+                                    UV-stråling
+                                    Gammastråling
+                                    IR-stråling
+                                    Mobilstråling
+                                    ">
+                                    <span class="assignment__illustration-text mt-1 mb-1 align-center">Figur 2.b: Det
+                                        elektromagnetiske spektrum.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="assignment__description-subtask pb-1">
+                            <span class="subtask-indicator">2.3</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Bølgelængden af IR-stråling er
+                                    (<label><input type="checkbox" id="fk_2_3_1" data-item="" value="x">
+                                        større end</label>, <label class="ml-1"><input type="checkbox" id="fk_2_3_2"
+                                            data-item="" value="x"> den samme som</label>, <label class="ml-1"><input
+                                            type="checkbox" id="fk_2_3_3" data-item="" value="x"> mindre end</label>)
+
+                                    bølgelængden af synligt lys.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description mt-0 mb-2 print-hide">
+                            <p>Flamingo er et isoleringsmateriale.<br>
+                                En elev undersøger temperaturen i en flamingokasse med låg. Der er en tændt glødepære i
+                                kassen.
+
+                            </p>
+                            <div class="assignment__description-line">
+                                <div class="assignment__illustration pt-0 mt-0 p-0 mb-0">
+                                    <img src="images/Fysik-Kemi/OPT_2_figur_2b_temperatur_i_flamingokasse.png"
+                                        class="w-80" alt="
+                                            Temperaturen i flamingokassen
+                                            Temperaturen (°C)
+                                            Tiden (min)
+                                        ">
+                                    <span class="assignment__illustration-text mt-1 mb-1 align-center">Figur 2.c:
+                                        Temperaturen som funktion af tiden.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="assignment__description-subtask pb-1">
+                            <span class="subtask-indicator">2.4</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvad er temperaturen i kassen ved begyndelsen af undersøgelsen?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <span><input type="text" class="inline-text" id="fk_2_4" data-item></span> °C
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">2.5</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Indsæt de korrekte ord/tal i følgende tekst. Der er angivet flere ord/tal, end du
+                                    har brug for.
+                                </div>
+                                <div class="assignment__description-line">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;"><b>Mulige ord</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;">stiger, aftager, 55, 62, 70, større end,
+                                                    mindre end, den samme som
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Grafen viser, at temperaturen <span><input type="text"
+                                                            class="inline-text w-20" id="fk_2_5_1" data-item="" style="
+    width: 117px;"><span
+                                                            class="hidden" style="width:auto;"></span></span> i
+                                                    begyndelsen.<br>
+                                                    Efter et stykke tid er temperaturen i kassen konstant på
+                                                    <span><input type="text" class="inline-text w-20" id="fk_2_5_2"
+                                                            data-item="" style="
+    width: 117px;"><span class="hidden"
+                                                            style="width:auto;"></span></span>
+                                                    °C. Det betyder at energien, som pæren tilfører kassen, er
+                                                    <span><input type="text" class="inline-text w-20" id="fk_2_5_3"
+                                                            data-item="" style="
+    width: 117px;"><span class="hidden"
+                                                            style="width:auto;"></span></span> den energi, der udsendes
+                                                    fra kassen.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fysik-kemi-3" class="page page__child">
+                    <h2>3. Nitrogens kredsløb</h2>
+                    <div class="assignment">
+                        <div class="assignment__illustration print-hide pt-0">
+                            <img class="w-80" src="images/Fysik-Kemi/OPT2_fig3a_Nitrogenskredsloeb.png" alt="
+                                Fossile brændstoffer udleder blandt andet NO og NO2
+
+                                Atmosfærisk nitrogen N2
+
+                                Nitrogenholdige gasser NO og NO2
+                                
+                                Syreregn
+                                
+                                Udvaskning
+                                
+                                Gødning
+                                
+                                Gødning
+                                
+                                Organisk materiale NH3
+                                
+                                Menneskelig påvirkning
+                                Nitrogens eget kredsløb
+
+                                Knoldbakterier
+                                
+                                Nedbrydere
+                                
+                                Nitrat NO3
+                                
+                                Ammonium NH4
+                                
+                                Nitrit NO2
+                            ">
+                            <span class="assignment__illustration-text pt-1">Figur 3.a: Nitrogens kredsløb
+                            </span>
+                        </div>
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">3.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>På figur 3.a indgår forskellige kemiske forbindelser. Sæt X ved den forbindelse
+                                        der er et grundstof:</p>
+                                    <div class="assignment__description-line">
+                                        <table class="table w-70">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align-center" style="padding: 14px"></td>
+                                                    <td class="align-center" style="width: 75px; padding: 14px"><b>Sæt
+                                                            X</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 14px">NH<sub>4</sub><sup>+</sup> (ammonium)</td>
+                                                    <td class="align-center" style="padding: 14px"><input
+                                                            type="checkbox" id="fk_3_1_1" data-item="" val="x"><label
+                                                            for="fk_3_1_1" class="hide"></label><span
+                                                            class="hidden"></span><label for="fk_3_1_1"
+                                                            class="hide"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 14px">NO (nitrogenoxid)</td>
+                                                    <td class="align-center" style="padding: 14px"><input
+                                                            type="checkbox" id="fk_3_1_2" data-item="" val="x"><label
+                                                            for="fk_3_1_2" class="hide"></label><span
+                                                            class="hidden"></span><label for="fk_3_1_2"
+                                                            class="hide"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 14px">N<sub>2</sub> (nitrogen)</td>
+                                                    <td class="align-center" style="padding: 14px"><input
+                                                            type="checkbox" id="fk_3_1_3" data-item="" val="x"><label
+                                                            for="fk_3_1_3" class="hide"></label><span
+                                                            class="hidden"></span><label for="fk_3_1_3"
+                                                            class="hide"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 14px">NO<sub>3</sub><sup>−</sup> (nitrat)</td>
+                                                    <td class="align-center" style="padding: 14px"><input
+                                                            type="checkbox" id="fk_3_1_4" data-item="" val="x"><label
+                                                            for="fk_3_1_4" class="hide"></label><span
+                                                            class="hidden"></span><label for="fk_3_1_4"
+                                                            class="hide"></label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="assignment">
+                            <div class="assignment__description-subtask">
+                                <span class="subtask-indicator">3.2</span>
+                                <div class="assignment__description-subtask-wrapper">
+                                    <div class="assignment__description-line">
+                                        Gasserne NO og NO<sub>2</sub> udledes til atmosfæren i nitrogens kredsløb. Hvad
+                                        gælder for
+                                        de to gasser?
+                                    </div>
+                                    <div class="assignment__description-line">
+                                        <table class="table w-70">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align-center" style="padding: 14px"><b>Udsagn</b></td>
+                                                    <td class="align-center" style="width: 75px; padding: 14px"><b>Sæt
+                                                            X</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 14px">De to stoffer er helt kemisk ens.</td>
+                                                    <td class="align-center" style="padding: 14px"><input
+                                                            type="checkbox" id="fk_3_2_1" data-item="" val="x"><label
+                                                            for="fk_3_2_1" class="hide"></label><span
+                                                            class="hidden"></span><label for="fk_3_2_1"
+                                                            class="hide"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 14px">Der er to nitrogenatomer i begge stoffer.
+                                                    </td>
+                                                    <td class="align-center" style="padding: 14px"><input
+                                                            type="checkbox" id="fk_3_2_2" data-item="" val="x"><label
+                                                            for="fk_3_2_2" class="hide"></label><span
+                                                            class="hidden"></span><label for="fk_3_2_2"
+                                                            class="hide"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 14px">Der er forskelligt antal oxygenatomer i de
+                                                        to stoffer.</td>
+                                                    <td class="align-center" style="padding: 14px"><input
+                                                            type="checkbox" id="fk_3_2_3" data-item="" val="x"><label
+                                                            for="fk_3_2_3" class="hide"></label><span
+                                                            class="hidden"></span><label for="fk_3_2_3"
+                                                            class="hide"></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 14px">Begge stoffer har en elektrisk ladning på
+                                                        1.</td>
+                                                    <td class="align-center" style="padding: 14px"><input
+                                                            type="checkbox" id="fk_3_2_4" data-item="" val="x"><label
+                                                            for="fk_3_2_4" class="hide"></label><span
+                                                            class="hidden"></span><label for="fk_3_2_4"
+                                                            class="hide"></label>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="assignment">
+                            <div class="assignment__description-subtask">
+                                <span class="subtask-indicator">3.3</span>
+                                <div class="assignment__description-subtask-wrapper">
+                                    <div class="assignment__description-line">
+                                        <p>Syreregn er en del af nitrogens kredsløb. Hvilken pH-værdi kan syreregn have?
+                                        </p>
+                                        <div class="assignment__description-line">
+                                            <div class="checkbox-row">
+                                                <label class="mr-1"><input type="checkbox" id="fk_3_3_1" data-item=""
+                                                        value="4-6">
+                                                    4 - 6</label>
+                                                <label class="mr-1"><input type="checkbox" id="fk_3_3_2" data-item=""
+                                                        value="7-9">
+                                                    7 - 9</label>
+                                                <label class="mr-1"><input type="checkbox" id="fk_3_3_3" data-item=""
+                                                        value="10-12"> 10 - 12</label>
+                                                <label class="mr-1"><input type="checkbox" id="fk_3_3_4" data-item=""
+                                                        value="13-14"> 13 - 14</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="assignment">
+							<div class="assignment__description mt-0 mb-2 print-hide">
+                                <p>Kaliumnitrat (KNO<sub>3</sub>) er et salt, der anvendes som gødning.</p>
+                                <div class="assignment__description-line">
+									<div class="pt-0 mt-0 p-0 mb-1 print-hide">
+                                     <img src="images/Fysik-Kemi/OPT2_Tabel_3_1_Saltes_oploeselighed.png" class="w-80"
+                                    alt="
+                                        Saltes opløselighed
+
+                                        L:
+                                        Letopløselige salte
+                                        Mere end 2 g i 100 mL vand
+
+                                        T:
+                                        Tungtopløselig salte
+                                        Mindre end 2 g i 100 mL vand
+                                    ">
+										<span class="assignment__illustration-text mt-2 mb-1">Tabel 3.1
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assignment__description-subtask mt-2">
+                                <span class="subtask-indicator">3.4</span>
+                                <div class="assignment__description-subtask-wrapper">
+                                    <div class="assignment__description-line mt-2">
+                                        <p>Kan der opløses mere end 2 g kaliumnitrat (KNO<sub>3</sub>) i 100 mL vand?
+                                            Anvend tabel
+                                            3.1.</p>
+
+                                        <div class="checkbox-row">
+                                            <label class="mr-1"><input type="checkbox" id="fk_3_4_1" data-item=""
+                                                    value="x">
+                                                Ja</label>
+                                            <label class="mr-1"><input type="checkbox" id="fk_3_4_2" data-item=""
+                                                    value="x">
+                                                Nej</label>
+                                            <label class="mr-1"><input type="checkbox" id="fk_3_4_3" data-item=""
+                                                    value="x"> Oplyses ikke i tabellen</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="assignment">
+                            <div class="assignment__description mt-0 print-hide">
+                                <p>Kaliumnitrat er en del af NPK-kunstgødning. Når det spredes, så findes det i de
+                                    øverste jordlag.
+                                </p>
+                            </div>
+                            <div class="assignment__description-subtask">
+                                <span class="subtask-indicator">3.5</span>
+                                <div class="assignment__description-subtask-wrapper">
+                                    <div class="assignment__description-line">
+                                        <p>Hvilken hypotese om kemiske forbindelser, der indeholder nitrat
+                                            (NO<sub>3</sub><sup>−</sup>), kan
+                                            opstilles ud fra tabel 3.1. </p>
+                                        <div class="assignment__description-line">
+                                            <table class="table w-70">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="align-center" style="padding: 14px"></td>
+                                                        <td class="align-center" style="width: 75px; padding: 14px">
+                                                            <b>Sæt
+                                                                X</b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 14px">Nitratforbindelser opløses let i vand
+                                                            og udvaskes delvist.</td>
+                                                        <td class="align-center" style="padding: 14px"><input
+                                                                type="checkbox" id="fk_3_5_1" data-item=""
+                                                                val="x"><label for="fk_3_5_1" class="hide"></label><span
+                                                                class="hidden"></span><label for="fk_3_5_1"
+                                                                class="hide"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 14px">Nitrat (NO<sub>3</sub><sup>−</sup>)
+                                                            binder sig til jordens
+                                                            negative ladede lerpartikler og bliver liggende i de øverste
+                                                            jordlag.</td>
+                                                        <td class="align-center" style="padding: 14px"><input
+                                                                type="checkbox" id="fk_3_5_2" data-item=""
+                                                                val="x"><label for="fk_3_5_2" class="hide"></label><span
+                                                                class="hidden"></span><label for="fk_3_5_2"
+                                                                class="hide"></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 14px">Der kan opløses mindre end 2 g
+                                                            nitratforbindelser i 100 mL vand.</td>
+                                                        <td class="align-center" style="padding: 14px"><input
+                                                                type="checkbox" id="fk_3_5_3" data-item=""
+                                                                val="x"><label for="fk_3_5_3" class="hide"></label><span
+                                                                class="hidden"></span><label for="fk_3_5_3"
+                                                                class="hide"></label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fysik-kemi-4" class="page page__child">
+                    <h2>4. Vandkraft</h2>
+                    <div class="assignment">
+                        <div class="assignment__description print-hide">
+                            En elev bygger en model af et vandkraftværk og undersøger, om kraftværket kan få tre pærer
+                            til at lyse.
+                        </div>
+                        <div class="assignment__illustration p-0 mt-0 print-hide">
+                            <img src="images/Fysik-Kemi/OPT2_figur4a.png" class="w-70" alt="">
+                            <span class="assignment__illustration-text mt-1">Figur 4.a: Model.
+                            </span>
+                        </div>
+
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">4.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvilken energiomsætning finder sted i generatoren?</p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <table class="table w-70">
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-center"><b>Energiomsætning</b></td>
+                                                <td class="align-center" style="width: 75px"><b>Sæt X</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>kinetisk energi → elektrisk energi</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_1_1"
+                                                        data-item="" val="x"><label for="fk_4_1_1"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_1_1" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>elektrisk energi → strålingsenergi</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_1_2"
+                                                        data-item="" val="x"><label for="fk_4_1_2"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_1_2" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>potentiel energi → elektrisk energi</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_1_3"
+                                                        data-item="" val="x"><label for="fk_4_1_3"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_1_3" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">4.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvilke partikler bevæger sig i ledningen, når pærerne lyser?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <div class="checkbox-row">
+                                        <label class="mr-1"><input type="checkbox" id="fk_4_2_1" data-item="" value="x">
+                                            protoner</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_4_2_2" data-item="" value="x">
+                                            ioner</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_4_2_3" data-item="" value="x">
+                                            elektroner</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_4_2_4" data-item="" value="x">
+                                            neutroner</label>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">4.3</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvordan lyser pærerne, hvis eleven skruer mere op for vandet?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <table class="table w-70">
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-center"></td>
+                                                <td class="align-center" style="width: 75px"><b>Sæt X</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pærerne blinker.</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_3_1"
+                                                        data-item="" val="x"><label for="fk_4_3_1"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_3_1" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pærerne lyser stærkere.</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_3_2"
+                                                        data-item="" val="x"><label for="fk_4_3_2"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_3_2" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pærerne lyser svagere.</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_3_3"
+                                                        data-item="" val="x"><label for="fk_4_3_3"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_3_3" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">4.4</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Eleven skruer pære nummer 1 løs. Hvordan vil de to andre pærerne lyse?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <table class="table w-70">
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-center"></td>
+                                                <td class="align-center"><b>Lyser</b></td>
+                                                <td class="align-center"><b>Lyser ikke</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pære 2</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_4_1"
+                                                        data-item="" val="x"><label for="fk_4_4_1"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_4_1" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_4_2"
+                                                        data-item="" val="x"><label for="fk_4_4_2"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_4_2" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pære 3</td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_4_3"
+                                                        data-item="" val="x"><label for="fk_4_4_3"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_4_3" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                                <td class="align-center"><input type="checkbox" id="fk_4_4_4"
+                                                        data-item="" val="x"><label for="fk_4_4_4"
+                                                        class="hide"></label><span class="hidden"></span><label
+                                                        for="fk_4_4_4" class="hide"></label><span class="hidden"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assignment">
+                        <div class="assignment__illustration p-0 mt-0 print-hide">
+                            <img src="images/Fysik-Kemi/OPT2_figur_4b.png" class="" alt="
+A.
+B.
+C.
+D.
+Lampe
+Veksel-
+spænding
+                            ">
+                            <span class="assignment__illustration-text mt-1">Figur 4.b: Diagrammer
+                            </span>
+                        </div>
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">4.5</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    Hvilket diagram svarer til elevens opstilling?
+                                </div>
+                                <div class="assignment__description-line">
+                                    <div class="checkbox-row">
+                                        <label class="mr-1"><input type="checkbox" id="fk_4_5_1" data-item="" value="x">
+                                            A</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_4_5_2" data-item="" value="x">
+                                            B</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_4_5_3" data-item="" value="x">
+                                            C</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_4_5_4" data-item="" value="x">
+                                            D</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fysik-kemi-5" class="page page__child">
+                    <h2>5. Ballon</h2>
+                    <div class="assignment">
+                        <div class="assignment__description mt-0 mb-2 print-hide">
+                            <p>
+                                En elev blander eddike og natron i en flaske og sætter en ballon på flaskens hals.<br>
+
+                                Eddike har en pH-værdi på 3.<br>
+                                Natron er en base.
+
+                            </p>
+                        </div>
+                        <div class="assignment__description-subtask pb-0">
+                            <span class="subtask-indicator">5.1</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvad sker der med eddikes pH-værdi, når der tilsættes natron? </p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <div class="checkbox-row">
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_1_1" data-item="" value="x">
+                                            pH falder</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_1_2" data-item="" value="x">
+                                            pH stiger</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_1_3" data-item="" value="x">
+                                            pH forbliver uændret</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description">
+                            <div class="assignment__illustration p-0 mt-0 print-hide">
+                                <img src="images/Fysik-Kemi/OPT2_figur5a.jpg" class="w-60" alt="">
+                                <span class="assignment__illustration-text mt-1">Figur 5.a: Ballonen pustes op af en
+                                    gas.
+                                </span>
+                            </div>
+                            <div class="asignment__description-line print-hide">
+                                <p>Eleven tager ballonen af flasken og bliver overrasket over ballonens vægt. Derfor vejes
+                                    ballonen.</p>
+                            </div>
+                            <div class="assignment__description-line print-hide">
+                                <table class="table w-80">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w-50"><img src="images/Fysik-Kemi/OPT2_figur_5a1.jpg" class="" alt="
+                                                CO2
+                                                25,0g
+                                                "></td>
+                                            <td class="w-50"><img src="images/Fysik-Kemi/OPT2_figur_5a2.jpg" class="" alt="
+                                                Udåndingsluft
+                                                4,0g
+                                                "></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-center" style="padding: 14px; vertical-align: text-top;">Ballonen fra flasken</td>
+                                            <td class="align-center" style="padding: 14px; vertical-align: text-top;">Ballon som eleven har pustet
+                                                op
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <span class="assignment__illustration-text mt-1">Figur 5.a: Vejning af
+                                    2 balloner. </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">5.2</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>Hvad vil eleven opleve, når de to balloner slippes?</p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <div class="checkbox-row">
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_2_1" data-item="" value="x">
+                                            Blå ballon stiger hurtigst. </label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_2_2" data-item="" value="x">
+                                            Blå ballon stiger langsomst. </label><br>
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_2_3" data-item="" value="x">
+                                            Blå ballon falder hurtigst.</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_2_4" data-item="" value="x">
+                                            Blå ballon falder langsomst.</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">5.3</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p class="print-hide">Syren i eddike har formlen CH<sub>3</sub>COOH, og natron har
+                                        formlen
+                                        NaHCO<sub>3</sub>.</p>
+                                    <p>
+                                        Hvilken af følgende kemiske forbindelser kan der dannes i reaktionen. Sæt 1 X.
+                                    </p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <div class="checkbox-row">
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_3_1" data-item="" value="x">
+                                            HCl</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_3_2" data-item="" value="x">
+                                            CO<sub>2</sub></label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_3_3" data-item="" value="x">
+                                            NaCl</label>
+                                        <label class="mr-1"><input type="checkbox" id="fk_5_3_4" data-item="" value="x">
+                                            C<sub>2</sub>H<sub>6</sub>NO<sub>2</sub></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment">
+                        <div class="assignment__description print-hide">
+                            <p>
+                                Syren i eddike kan skrives på to måder: C<sub>2</sub>H<sub>4</sub>O<sub>2</sub> eller
+                                CH<sub>3</sub>COOH.
+                            </p>
+                        </div>
+                        <div class="assignment__description-subtask">
+                            <span class="subtask-indicator">5.4</span>
+                            <div class="assignment__description-subtask-wrapper">
+                                <div class="assignment__description-line">
+                                    <p>
+                                        Sæt X ved den strukturformel, der viser syren i eddike (C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>).
+                                    </p>
+                                </div>
+                                <div class="assignment__description-line">
+                                    <table>
+                                        <tbody> 
+                                            <tr>
+                                                <td>
+                                                   <img src="images/Fysik-Kemi/OPT2_figur5_4_1.jpg" alt="
+                                    Temperaturskala">  <label class="mr-1"><input type="checkbox" id="fk_5_4_1"
+                                                            data-item="" value="x">
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <img src="images/Fysik-Kemi/OPT2_figur5_4_2.jpg" alt="
+                                    Temperaturskala">  <label class="mr-1"><input type="checkbox" id="fk_5_4_2"
+                                                            data-item="" value="x">
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <img src="images/Fysik-Kemi/OPT2_figur5_4_3.jpg" alt="
+                                    Temperaturskala">  <label class="mr-1"><input type="checkbox" id="fk_5_4_3"
+                                                            data-item="" value="x">
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="copydan" class="page page__child print-hide">
+                    <h2>Oplysninger til brug for Copydan
+                    </h2>
+                    <p>
+                        <i><b>Anvendt materiale i Dansk:</b></i><br>
+                        Kathrine Bækgaard Gade: <i>”Telefonskræk: Jeg vil hellere have en nål gennem næsen end at ringe
+                            til
+                            en piercer”</i><br>
+                        Heartbeats.dk<br>
+                        30. september, 2024
+
+
+                        <br> <br>
+                        <i><b>Anvendt materiale i engelsk:</b></i><br>
+                        Image credit: “Nemesis: Famous rollercoaster at Alton Towers theme park to shut for a year",<br>
+                        CBBC
+                        Newsround, 5 November 2022, viewed September 2024.<br>
+                        (https://www.bbc.co.uk/newsround/63525284)
+                    </p>
+                </div>
+                <div id="Ophavsret" class="page page__child print-hide">
+                    <div class="ophavsret">
+                        <h2>Dette prøvesæt er omfattet af ophavsretten, jf.
+                            ophavsretslovens § 1.</h2>
+                        <p>
+                            Prøvesættet må alene anvendes til den på prøvesættet anførte prøve. <br><br>
+                            Al anden anvendelse af prøvesættet, herunder visning eller deling f.eks. via
+                            internettet,
+                            sociale medier, portaler og bøger, udgør en krænkelse af Børne- og
+                            Undervisningsministeriets
+                            og evt. tredjemands ophavsret og er ikke tilladt.<br><br>
+                            Overtrædelse af ophavsretten kan være erstatningspådragende og/eller strafbart.<br><br>
+                            Prøvesættet kan dog, efter at prøven er afsluttet, anvendes til undervisningsbrug på
+                            uddannelser m.v. omfattet af den lovgivning, som Styrelsen for Undervisning og Kvalitet
+                            administrerer.
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+</body>
+<script src="js/navigation.js"></script>
+<script src="js/browser-check.js"></script>
+<script src="js/custom-dropdown.js"></script>
+<script src="js/checkbox.js"></script>
+
+</html>

@@ -1,0 +1,359 @@
+/* This title is only vissible on print */
+.print-assignment-title {
+    display: none;
+}
+
+/* Print style */
+@media print {
+    body {
+        background-color: #fff;
+    }
+
+    @page {
+        size: A4;
+        padding: 20mm 10mm 10mm 10mm;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .page {
+        display: block;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    .date-time {
+        margin-top: 3rem;
+    }
+
+    p {
+        hyphens: none;
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .nav-overview,
+    .nav__link,
+    .nav__link-external,
+    .header,
+    .gray-box,
+    .blue-box,
+    .word-list,
+    .signaturImage,
+    .assignment__illustration-text,
+    .ck.ck-sticky-panel__content {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem 0rem 0.5rem 0rem;
+    }
+
+    h2 {
+        padding-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .mq-math-mode,
+    .mq-root-block.mq-hasCursor,
+    .mq-root-block span,
+    .mq-root-block var {
+        display: math;
+        color: black;
+    }
+
+    .equation.mq-editable-field.mq-math-mode {
+        display: inline-block;
+        font-weight: bold;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid rgb(133, 133, 133) !important;
+        border-collapse: collapse;
+    }
+
+    .mq-fraction.mq-non-leaf {
+        display: inline-block;
+        border: none;
+    }
+
+    .frontpage__heading {
+        font-size: 1.6rem;
+        /* page-break-before: always; */
+    }
+
+    .assignment__description-line table td:not(.no-border) {
+        border: 2px solid #000 !important;
+    }
+
+    .nav {
+        position: absolute;
+        width: 10rem;
+        height: 2rem;
+        background-color: transparent;
+        color: black;
+        top: 8rem;
+        page-break-before: always;
+    }
+
+    .nav__bottom span {
+        border-top: none;
+        padding-left: 0px;
+    }
+
+    .nav__bottom {
+        justify-content: start;
+        display: block;
+        position: absolute;
+    }
+
+    .page__child {
+        padding: 0% 0rem;
+        border: none;
+    }
+
+    .assignment {
+        border: none;
+        padding: 0 0;
+    }
+
+    .assignment h3 {
+        margin-top: 2rem;
+        margin-bottom: -2.4rem;
+        font-size: 13px;
+    }
+
+    .print-avoid-break,
+    .page__child {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        display: block;
+    }
+
+    /*Use this if you want to hide a text, with a word/sentence inside you want to show*/
+    .print-hide__text,
+    .print-hide__text p {
+        font-size: 0;
+        page-break-inside: avoid;
+        line-height: 0px;
+        margin-bottom: 0;
+    }
+
+    /*Use this on the word/sentence you want to show, inside a text you want to hide*/
+    .print-hide__text span.underline-words {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .print-hide__text::before {
+        content: attr(data-result);
+        font-weight: bold;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .print-show__number::before {
+        content: attr(data-result);
+        font-weight: bold;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        display: block;
+    }
+
+    .print-hide__text .underline-words::before {
+        content: attr(data-result);
+        font-weight: bold;
+        margin-right: 2rem;
+    }
+
+    .print-hide__text .underline-words {
+        width: 100%;
+        height: 2rem;
+        display: block;
+    }
+
+    .print-hide__text .underline-word.active {
+        font-weight: bold;
+    }
+
+    .print-hide__text br {
+        display: none;
+    }
+
+    .print-show__number {
+        display: block;
+    }
+
+    .print-assignment-title {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .find-replace-words {
+        page-break-inside: avoid;
+    }
+
+    #tech-info {
+        display: block;
+        position: absolute;
+        top: 0px;
+        padding: 20px 0;
+        color: #ccc;
+    }
+
+    .frontpage__heading {
+        margin-bottom: 0;
+        border: none;
+        padding: 80px 0px 20px;
+    }
+
+    .page__parent h1 {
+        margin-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        page-break-before: always;
+    }
+
+    .assignment__description-subtask {
+        padding-bottom: 1rem;
+        page-break-inside: avoid;
+    }
+
+    .assignment__description-subtask--small {
+        padding: 0 0 1px 0;
+    }
+
+    .assignment__description-subtask:last-child {
+        padding-bottom: 1rem;
+    }
+
+    .assignment__description-subtask-wrapper {
+        padding: 0 0 0 2rem;
+        page-break-inside: avoid;
+    }
+
+    #dansk-1 .assignment__description-subtask-wrapper {
+        padding: 0 0 0 3rem;
+    }
+
+    .assignment__description-subtask p {
+        margin: 0;
+    }
+
+    .assignment__description-line p {
+        margin: 0 0 0.5rem;
+    }
+
+    .assignment__description {
+        padding: 0px 0px 0px 49px;
+    }
+
+    input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    input[type="text"] {
+        font-style: normal;
+        font-weight: bold;
+
+    }
+
+    [type="checkbox"]:not(:checked)+label:before,
+    [type="checkbox"]:checked+label:before {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #232323 !important;
+        background: #fff;
+        border-radius: 0px;
+        box-shadow: none;
+        -moz-appearance: none;
+        border-collapse: collapse;
+    }
+
+    .textarea {
+        /* margin-left: 2rem; */
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0.3rem;
+        line-height: 2;
+    }
+
+    .textarea textarea {
+        display: none;
+    }
+
+    .input-find-replace.check input {
+        margin: 6px 0 5px;
+    }
+
+    .ck.ck-reset.ck-editor.ck-rounded-corners,
+    .asignment__description-line.line-height-4,
+    textarea.textarea,
+    .word-count:before,
+    .print-ml-2 {
+        margin-left: 3rem;
+        page-break-inside: avoid;
+    }
+
+    .ck-editor {
+        border: 2px solid #000;
+    }
+
+    .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+        border: 2px solid #000;
+    }
+
+    .text-field,
+    .print-ml-4 {
+        margin-left: 4rem;
+    }
+
+    .print-mb-1 {
+        margin-bottom: 1rem;
+    }
+
+    .print-mt-1 {
+        margin-top: 1rem;
+    }
+
+    .print-mt-2 {
+        margin-top: 2rem;
+    }
+
+    .assignment__description-subtask-wrapper .text-field {
+        margin-left: 0rem;
+    }
+
+    .print-hide {
+        display: none;
+    }
+
+    /* Costum assignment styling */
+
+    #fk_1_4_2 {
+        top: 43.5%;
+    }
+
+    #fk_1_4_3 {
+        top: 68%;
+    }
+
+    #eng_4 {
+        margin-left: 3rem;
+    }
+
+    #engelsk-5 .word-count:before {
+        margin-left: 0rem;
+    }
+}
