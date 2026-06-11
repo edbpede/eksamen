@@ -72,21 +72,168 @@ function createExamCard(exams) {
   return card;
 }
 
+// --- Kodebeskyttelse (krypteret liste) ---------------------------------------
+// Listen er krypteret med AES-GCM og en PBKDF2-nøgle udledt af koden. Hverken
+// koden eller prøve-stierne ligger i klartekst i det servede site; forkert kode
+// kan ikke dekryptere. Beskytter website-UI'et — ikke det offentlige git-repo.
+const ENC_URL = "proever/optagelsesprover.enc.json";
+const SESSION_KEY = "optagelse_pw";
+
+let encBlobPromise = null;
+function fetchEncBlob() {
+  if (!encBlobPromise) {
+    encBlobPromise = fetch(ENC_URL).then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    });
+  }
+  return encBlobPromise;
+}
+
+function b64ToBytes(b64) {
+  const binary = atob(b64);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return bytes;
+}
+
+async function deriveKey(pw, salt, iter) {
+  const keyMaterial = await crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(pw),
+    "PBKDF2",
+    false,
+    ["deriveKey"],
+  );
+  return crypto.subtle.deriveKey(
+    { name: "PBKDF2", salt, iterations: iter, hash: "SHA-256" },
+    keyMaterial,
+    { name: "AES-GCM", length: 256 },
+    false,
+    ["decrypt"],
+  );
+}
+
+// Returnerer det dekrypterede prøve-array, eller kaster ved forkert kode
+// (GCM-auth-tag fejler) eller ugyldigt indhold.
+async function decryptIndex(pw, blob) {
+  const salt = b64ToBytes(blob.salt);
+  const iv = b64ToBytes(blob.iv);
+  const ct = b64ToBytes(blob.ct);
+  const key = await deriveKey(pw, salt, blob.iter);
+  const plaintext = await crypto.subtle.decrypt(
+    { name: "AES-GCM", iv },
+    key,
+    ct,
+  );
+  return JSON.parse(new TextDecoder().decode(plaintext));
+}
+
+function renderExams(main, exams) {
+  exams.sort((a, b) => (a.date < b.date ? 1 : -1));
+  main.replaceChildren(createExamCard(exams));
+}
+
+function showError(main, message) {
+  const errorMsg = document.createElement("div");
+  errorMsg.className = "error-message";
+  errorMsg.textContent = message;
+  main.replaceChildren(errorMsg);
+}
+
+function renderGate(main, prefill) {
+  const form = document.createElement("form");
+  form.className = "passgate";
+  form.noValidate = true;
+
+  const label = document.createElement("label");
+  label.className = "passgate__label";
+  label.htmlFor = "passgate-input";
+  label.textContent = "Indtast kode for at se optagelsesprøverne";
+
+  const input = document.createElement("input");
+  input.className = "passgate__input";
+  input.id = "passgate-input";
+  input.type = "password";
+  input.autocomplete = "off";
+  input.setAttribute("autocapitalize", "off");
+  input.spellcheck = false;
+
+  const button = document.createElement("button");
+  button.className = "passgate__submit";
+  button.type = "submit";
+  button.textContent = "Lås op";
+
+  const error = document.createElement("p");
+  error.className = "passgate__error";
+  error.hidden = true;
+
+  form.append(label, input, button, error);
+  main.replaceChildren(form);
+  input.focus();
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const pw = input.value;
+    if (!pw) return;
+
+    error.hidden = true;
+    button.disabled = true;
+    try {
+      const blob = await fetchEncBlob();
+      const exams = await decryptIndex(pw, blob);
+      sessionStorage.setItem(SESSION_KEY, pw);
+      renderExams(main, exams);
+    } catch (err) {
+      if (err instanceof SyntaxError || err.name === "OperationError") {
+        // Forkert kode: GCM-tag-fejl eller udekrypterbart indhold.
+        error.textContent = "Forkert kode. Prøv igen.";
+        error.hidden = false;
+        button.disabled = false;
+        input.select();
+      } else {
+        console.error("Error loading optagelsesprøver:", err);
+        showError(
+          main,
+          "Der opstod en fejl ved indlæsning af optagelsesprøverne.",
+        );
+      }
+    }
+  });
+
+  if (prefill) {
+    input.value = prefill;
+    form.requestSubmit();
+  }
+}
+
 async function initialize() {
   const main = document.querySelector(".subject-grid");
-  try {
-    const response = await fetch("proever/optagelsesprover-index.json");
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const exams = await response.json();
-    exams.sort((a, b) => (a.date < b.date ? 1 : -1));
-    main.appendChild(createExamCard(exams));
-  } catch (error) {
-    console.error("Error loading optagelsesprøver:", error);
-    const errorMsg = document.createElement("div");
-    errorMsg.className = "error-message";
-    errorMsg.textContent = "Der opstod en fejl ved indlæsning af optagelsesprøverne.";
-    main.appendChild(errorMsg);
+
+  if (!(window.crypto && crypto.subtle)) {
+    showError(
+      main,
+      "Din browser understøtter ikke den nødvendige kryptering. Brug en nyere browser.",
+    );
+    return;
   }
+
+  // Husk login i fanen: forsøg auto-unlock hvis koden er gemt fra et tidligere
+  // besøg i samme session.
+  const stored = sessionStorage.getItem(SESSION_KEY);
+  if (stored) {
+    try {
+      const blob = await fetchEncBlob();
+      const exams = await decryptIndex(stored, blob);
+      renderExams(main, exams);
+      return;
+    } catch (err) {
+      // Gemt kode duede ikke (eller fetch fejlede) → ryd og vis gaten.
+      sessionStorage.removeItem(SESSION_KEY);
+    }
+  }
+
+  renderGate(main);
 }
 
 document.addEventListener("DOMContentLoaded", initialize);

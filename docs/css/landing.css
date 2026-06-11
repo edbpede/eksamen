@@ -219,6 +219,79 @@
   grid-column: 1 / -1;
 }
 
+.passgate {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-4);
+  background: var(--paper);
+  padding: var(--sp-8);
+  padding-left: calc(var(--sp-8) - 4px);
+  border-left: 4px solid var(--accent);
+}
+
+.passgate__label {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.passgate__input {
+  width: 100%;
+  max-width: 360px;
+  padding: var(--sp-3) var(--sp-4);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--paper-alt);
+  border: 1px solid var(--rule-strong);
+  border-radius: 0;
+  transition: border-color 150ms ease;
+}
+
+.passgate__input:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.passgate__submit {
+  padding: var(--sp-3) var(--sp-6);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  transition: background 150ms ease;
+}
+
+.passgate__submit:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.passgate__submit:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.passgate__submit:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.passgate__error {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--accent);
+}
+
 .cross-link {
   display: block;
   max-width: var(--max-w);
