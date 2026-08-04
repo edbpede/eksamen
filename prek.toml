@@ -5,9 +5,13 @@
 [[repos]]
 repo = "builtin"
 hooks = [
-  { id = "trailing-whitespace" },
-  { id = "end-of-file-fixer" },
-  { id = "mixed-line-ending", args = ["--fix=lf"] },
+  # docs/proever/ is the Ministry of Children and Education's exam archive,
+  # under its own LICENSE (see CLAUDE.md "Licensing") and vendored verbatim —
+  # the whitespace/EOF/line-ending fixers must not rewrite third-party
+  # licensed content we do not own.
+  { id = "trailing-whitespace", exclude = "^docs/proever/" },
+  { id = "end-of-file-fixer", exclude = "^docs/proever/" },
+  { id = "mixed-line-ending", args = ["--fix=lf"], exclude = "^docs/proever/" },
   { id = "check-merge-conflict" },
   { id = "check-case-conflict" },
   { id = "check-added-large-files", args = ["--maxkb=500"] },
