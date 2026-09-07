@@ -9,9 +9,7 @@
 name: Code Quality
 
 on:
-  push:
-    branches: [main]
-  pull_request:
+  workflow_call:
   workflow_dispatch:
 
 permissions:
@@ -24,13 +22,13 @@ concurrency:
 jobs:
   quality:
     name: prek hooks
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
         with:
-          ref: ${{ github.head_ref || github.ref }}
+          persist-credentials: false
 
       # `no-commit-to-branch` is a local-commit guard and is meaningless in
       # CI, where the checked-out ref legitimately is main.
@@ -39,6 +37,8 @@ jobs:
       - name: Run prek hooks
         uses: j178/prek-action@v3.0.0
         with:
+          # renovate: datasource=github-releases depName=j178/prek
+          prek-version: 0.5.2
           extra-args: --all-files --hook-stage manual
         env:
           SKIP: no-commit-to-branch

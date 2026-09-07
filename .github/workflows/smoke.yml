@@ -10,9 +10,7 @@
 name: Smoke Test
 
 on:
-  push:
-    branches: [main]
-  pull_request:
+  workflow_call:
   workflow_dispatch:
 
 # Read-only throughout.
@@ -26,11 +24,11 @@ concurrency:
 jobs:
   smoke:
     name: Serve · load
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
 
       - name: Serve docs and smoke-test pages
         run: |
