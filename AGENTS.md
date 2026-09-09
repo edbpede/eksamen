@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents when working with code in this
 repository.
 
 Zero-build static site archiving Danish FP9/FP10 exam material. `docs/` is the
-published web root (`docs/CNAME` → eksamen.edbpede.net). There is no
+published web root (`docs/CNAME` → eksamen.edb.fi). There is no
 `package.json`, lockfile, or bundler — first-party code is hand-written ES
 modules and plain CSS loaded directly by the browser. Do not introduce a Node
 toolchain; both CI workflow headers document the decision.

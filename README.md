@@ -28,7 +28,7 @@ To run the project locally:
 
 ## Links
 
-- [Live Site](https://eksamen.edbpede.net)
+- [Live Site](https://eksamen.edb.fi)
 - [Prøvebanken](https://www.prøvebanken.dk)
 
 ## Adding New Exams
