@@ -19,8 +19,18 @@ that both landing pages return real HTML. It does not test client-side rendering
 or decrypt the exam index. No Node toolchain, bundler, or placeholder test suite
 is added to this static site.
 
-Renovate inherits the shared versioned presets, including non-major grouping,
-TOML hook revision tracking, and checks-gated PR automerge. Major updates and
-pre-1.0 minor upgrades follow the shared dashboard/manual policy. Default-branch
-protection requires `ci / required`, an up-to-date branch, and no bypass; enable
-automerge only after this gate has passed. Actions use full version tags.
+Renovate uses the v1.1.0 default and automerge presets. All update types, including
+majors and shared-policy versions, are eligible without dashboard approval after
+all four current-head checks in `.github/merge-policy.json` pass. Genuine author
+sign-offs are preserved, and full CI is dispatched for the exact merged commit.
+Other changes retain review of the exact head/base, full diff, authors/DCO,
+every expected job and relevant artifacts before ghmerge. No branch protections
+or repository rulesets are configured. Actions use full version tags.
+
+Pages continues to publish the static `main:/docs` tree at `eksamen.edb.fi`.
+Current Renovate extraction manages only workflow, hook and shared-preset versions,
+all outside `docs/`; those updates do not change the served tree and need no
+redeployment. Therefore checked merging has no deployment follow-up here. Ordinary
+maintainer content pushes retain native Pages publication. If served dependencies
+or a build are introduced, include their publication in the checked-merge policy
+at that time. No Node toolchain or Biome installation is introduced.
